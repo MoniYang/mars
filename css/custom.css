@@ -869,13 +869,26 @@ input option {
   width: 100%;
   top: 0;
   z-index: 100;
+  background-color: #1a1a1a;
+}
+.header .logo_w {
+  display: block;
+}
+.header .logo_b {
+  display: none;
 }
 .header img {
   max-width: 150px;
 }
 
 .header.fixed {
-  background: linear-gradient(to bottom, rgba(200, 23, 93, 0.8) 34%, rgba(200, 23, 93, 0.33) 80%, rgba(200, 23, 93, 0) 100%);
+  background-color: #fff;
+}
+.header.fixed .logo .logo_b {
+  display: block;
+}
+.header.fixed .logo .logo_w {
+  display: none;
 }
 .header.fixed .logo img {
   max-width: 120px;
