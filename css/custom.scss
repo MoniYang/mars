@@ -13,7 +13,7 @@ html {
 	overflow-x: hidden;
 }
 body {
-	font-family: "Arial", "Microsoft JhengHei", Arial, Helvetica, sans-serif!important;
+	font-family: $font-style;
 	background: #1a1a1a;
 	// background-image: url("../images/gradient_bg.png");
 	background-repeat: no-repeat;
@@ -30,6 +30,7 @@ a {
 		text-decoration: none;
 	}
 }
+
 ul {
 	padding: 0px;
 	margin: 0px;
@@ -76,9 +77,26 @@ input {
 		max-width: 150px;
 		
 	}
+	&__img{
+		position: absolute;
+		width: 100%;
+		margin-top: -80px;
+		z-index: -2;
+		img{
+			width:100%;
+			max-width: 100%;
+		}
+	}
+	.img_w{
+		display: none;
+	}
+	.img_b{
+		display:block;
+	}
 }
 .header.fixed {
 	background-color:$white;
+	animation: header_fixed 1s 1;
 	// background: linear-gradient(to bottom, rgba(200, 23, 93, 0.8) 34%, rgba(200, 23, 93, 0.33) 80%, rgba(200, 23, 93, 0) 100%);
 	.logo {
 		.logo_b{
@@ -88,18 +106,59 @@ input {
 			display: none;
 		}
 		img {
-			max-width: 120px;
-			animation: header_fixed 1s 1;
+			// max-width: 120px;
+			
 			background-color: transparent;
-			@include rwdw(480){
-				max-width:80px;
-				animation: header_fixed_m 1s 1;
-			}
+			// @include rwdw(480){
+			// 	max-width:80px;
+			// 	animation: header_fixed_m 1s 1;
+			// }
 		}
 	}
+	.header_nav .nav li > a{
+		color:$black;
+	}
+	.balance{
+		color:$black;
+		// background-color:$black;
+		span{
+			color:$black;
+			background-color:$white;
+		}
+	
+	}
+	.nav{
+		.login_btn{
+			color:$black;
+			i{
+				color:$black;
+			}
+		}
+	
+	}
+	.support_language a .langText{
+		color:$black;
+	}
+	.img_w{
+		display: block;
+	}
+	.img_b{
+		display: none;
+	}
 
-
-
+}
+@keyframes header_fixed{
+	from{
+		top:-80px;
+		opacity: 0;
+	}
+	to{
+		top:0px;
+		opacity: 1;
+	}
+}
+.fullPageContent{
+	padding:0 10%;
 }
 .title {
     font-size: 36px;
@@ -205,7 +264,7 @@ button {
 li {
 	list-style-type: none;
 }
-.full-w {
+.w-full {
 	width: 100%;
 }
 .clock {
@@ -588,7 +647,22 @@ li {
 	margin-bottom: 5px;
 }
 .balance {
-	color: #fff;
+	color: $white;
+	text-align: right;
+	// padding:5px ;
+
+	float:right;
+	// background-color:$white;
+	i{
+		margin-right:3px;
+	}
+	span{
+		border-bottom:1px solid $black;
+		margin-left:5px;
+		background-color:$black;
+		color:$white;
+		padding:3px;
+	}
 	img {
 		max-width: 20px;
 	}
@@ -613,7 +687,7 @@ li {
 	}
 }
 .login_btn {
-	background-color: transparent;
+	// background-color: transparent;
 	border: 0;
 	text-shadow: 0 0 0;
 	color: #fff;
@@ -622,20 +696,20 @@ li {
 	text-transform: uppercase;
 	i {
 		margin-right: 5px;
-		color: #FFDC00;
+		color: $white;
 	}
 	&:focus {
 		outline: none;
 		color: #FFDC00;
 	}
-	&:hover {
-		outline: none;
-		color: #FFDC00;
-	}
-	&:active {
-		outline: none;
-		color: #FFDC00;
-	}
+	// &:hover {
+	// 	outline: none;
+	// 	color: #FFDC00;
+	// }
+	// &:active {
+	// 	outline: none;
+	// 	color: #FFDC00;
+	// }
 }
 .login_form {
 	width: 250px;
@@ -857,21 +931,21 @@ li {
 				height: inherit;
 				color: #fff;
 				font-weight: 500;
-				font-size: 16.8px;
+				font-size:14px;
 				text-align: center;
 				text-transform: uppercase;
 				float: left;
 			}
-			a {
-				&:focus {
-					background-color: transparent;
-					color: #FFDC00;
-				}
-				&:hover {
-					background-color: transparent;
-					color: #FFDC00;
-				}
-			}
+			// a {
+			// 	&:focus {
+			// 		background-color: transparent;
+			// 		color: #FFDC00;
+			// 	}
+			// 	&:hover {
+			// 		background-color: transparent;
+			// 		color: #FFDC00;
+			// 	}
+			// }
 		}
 	}
 }
@@ -939,6 +1013,9 @@ li {
 	float: left;
 	position: relative;
 	z-index: 10000000;
+	display: flex;
+	margin-top:10px;
+	align-items: center;
 	@include rwdw(991){
 		margin-top:-20px;
 		text-align: center;
@@ -2526,32 +2603,8 @@ img {
 		}
 	}
 }
-@keyframes header_fixed {
-	from {
-		max-width: 150px;
-		@include rwdw(480){
-			max-width:100px;
-		}
-    }
-    to{
-        max-width:120px;
-       @include rwdw(480){
-           max-width:80px;
-       }
-    }
-}
-@keyframes header_fixed_m {
-	from {
-	
-			max-width:100px;
-	
-    }
-    to{
-     
-           max-width:80px;
-      
-    }
-}
+
+
 @keyframes mobile_navClose {
 	from {
 		left: 0px;
