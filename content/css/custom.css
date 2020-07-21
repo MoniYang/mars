@@ -1511,6 +1511,12 @@ li {
   text-align: center;
   float: right;
 }
+.balance:hover i {
+  background-image: url("../../images/svg/spot.svg");
+  height: 30px;
+  width: 30px;
+  display: block;
+}
 .balance i {
   margin-right: 3px;
   font-size: 19.2px;

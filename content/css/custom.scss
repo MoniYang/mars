@@ -712,6 +712,15 @@ li {
     text-align: center;
 	float:right;
 	// background-color:$white;
+	&:hover{
+		i{
+			background-image: url('../../images/svg/spot.svg');
+			height:30px;
+			width: 30px;
+			display: block;
+			
+		}
+	}
 	i{
 		margin-right:3px;
 		font-size:font(1.6);
