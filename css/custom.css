@@ -904,6 +904,7 @@ input option {
 .header.fixed {
   background-color: #fff;
   animation: header_fixed 1s 1;
+  z-index: 101;
 }
 .header.fixed .header__img {
   background-image: url(../images/svg/pen_w.svg);
@@ -994,16 +995,35 @@ input option {
 
 .visual {
   float: left;
-  width: 23%;
+  width: 400px;
+  height: 630px;
   display: block;
   position: absolute;
-  z-index: 10;
-  background-image: url(../images/visual_bg.png);
+  left: -70px;
+  z-index: 100;
+  margin-top: -20px;
+  background-color: #fff;
   background-position: right bottom;
+  transform: rotate(-9deg);
+}
+.visual__inner {
+  padding: 10px;
 }
 .visual__img img {
   width: auto;
   height: auto;
+  max-width: 300px;
+  position: relative;
+  left: 80px;
+  top: 10px;
+}
+
+.dark_bg {
+  position: relative;
+  top: -50px;
+  z-index: 10;
+  float: left;
+  width: 100%;
 }
 
 .wrapper {
@@ -1699,8 +1719,6 @@ li {
 .logo {
   float: left;
   position: relative;
-  z-index: 10000000;
-  display: flex;
   padding-top: 5px;
   align-items: center;
 }
