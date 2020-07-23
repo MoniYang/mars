@@ -1,4 +1,6 @@
 
+
+
       $(window).scroll(function() {
         var scroll = $(window).scrollTop();
 
@@ -8,6 +10,9 @@
             $(".header").removeClass("fixed");
         }
     });
+
+
+    
 
     $(".login_btn").click(function () {
         if ($(".login_form").hasClass("open")) {

@@ -960,6 +960,7 @@ input option {
   text-align: center;
   justify-content: center;
   display: flex;
+  flex-direction: column;
   width: 100%;
 }
 
@@ -1042,7 +1043,29 @@ input option {
 
 .indexGame {
   background-size: cover;
-  padding: 20px 0px;
+}
+.indexGame .title {
+  position: relative;
+  margin-bottom: 50px;
+  z-index: 10;
+  position: relative;
+  margin-top: -120px;
+}
+.indexGame .title span {
+  margin: 0 auto 5px;
+}
+.indexGame .title p {
+  margin: 0 auto 20px;
+  padding-top: 10px;
+  border-image-source: linear-gradient(to right, rgba(44, 164, 224, 0) 0%, rgba(44, 164, 224, 0.8) 15%, rgba(44, 164, 224, 0.93) 20%, #41ade3 23%, white 50%, #2ca4e0 80%, #2ca4e0 81%, rgba(44, 164, 224, 0.8) 85%, rgba(44, 164, 224, 0) 100%);
+  border-top: 1px solid;
+  border-image-slice: 1;
+  border-width: 1px;
+}
+.indexGame__itemInner {
+  position: relative;
+  transform: skew(10deg);
+  padding: 20px;
 }
 .indexGame__item {
   width: 100%;
@@ -1052,7 +1075,7 @@ input option {
   border-top: 10px solid;
   border-bottom: 10px solid;
   border-image-slice: 1;
-  border-width: 3px;
+  border-width: 1px;
   margin-bottom: 20px;
   border-image-source: linear-gradient(to right, rgba(44, 164, 224, 0) 0%, rgba(44, 164, 224, 0.8) 15%, rgba(44, 164, 224, 0.93) 20%, #41ade3 23%, white 50%, #2ca4e0 80%, #2ca4e0 81%, rgba(44, 164, 224, 0.8) 85%, rgba(44, 164, 224, 0) 100%);
 }
@@ -1069,6 +1092,7 @@ input option {
 }
 .indexGame ul li:nth-child(2) {
   margin-top: -50px;
+  margin-left: 20px;
 }
 
 #nav-border {
@@ -1614,14 +1638,16 @@ li {
   float: left;
 }
 
-.jackpot_area {
+.jackpot__area {
   position: relative;
   float: left;
   width: 100%;
   z-index: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
-
-.jackpot_show {
+.jackpot__show {
   position: relative;
   margin-top: -18px;
   padding: 3px 3px 3px;
@@ -1630,24 +1656,19 @@ li {
   animation-iteration-count: infinite;
   background-size: 400% 400%;
 }
-.jackpot_show .jackpot_show_inner {
+.jackpot__show__inner {
   padding: 0px 30px;
   border-radius: 10px;
   font-weight: bold;
 }
-.jackpot_show .jackpot_show_inner p {
+.jackpot__show__inner p {
   text-align: center;
   font-size: 54px;
   color: #fff;
-  background: linear-gradient(135deg, #fefcea 0%, #f1da36 19%, #fefcea 52%, #f1da36 86%, #f1da36 86%);
+  background: linear-gradient(to right, rgba(44, 164, 224, 0) 0%, rgba(44, 164, 224, 0.8) 15%, rgba(44, 164, 224, 0.93) 20%, #41ade3 23%, white 50%, #2ca4e0 80%, #2ca4e0 81%, rgba(44, 164, 224, 0.8) 85%, rgba(44, 164, 224, 0) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 0px;
-}
-
-.css-selector {
-  background: linear-gradient(226deg, #8d1a78, #611c93);
-  background-size: 400% 400%;
 }
 
 .fp-txt {

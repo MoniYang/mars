@@ -177,7 +177,8 @@ input {
     font-weight: bold;
     text-align: center;
     justify-content: center;
-    display: flex;
+	display: flex;
+	flex-direction: column;
     width: 100%;
 }
 .small_title {
@@ -275,8 +276,33 @@ input {
 }
 .indexGame {
 	background-size: cover;
-	padding: 20px 0px;
+	// padding: 20px 0px;
+	.title{
+		position:relative;
+
+		margin-bottom: 50px;
+		z-index: 10;
+		position: relative;
+		margin-top: -120px;
+		span{
+		margin:0 auto 5px;	
+		
+		}
+		p{
+			margin:0 auto 20px;
+			padding-top: 10px;
+			border-image-source: linear-gradient(to right, rgba(44,164,224,0) 0%,rgba(44,164,224,0.8) 15%,rgba(44,164,224,0.93) 20%,rgba(65,173,227,1) 23%,rgba(255,255,255,1) 50%,rgba(44,164,224,1) 80%,rgba(44,164,224,1) 81%,rgba(44,164,224,0.8) 85%,rgba(44,164,224,0) 100%); 
 	
+	border-top:1px solid;
+	border-image-slice: 1;
+	border-width: 1px;
+		}
+	}
+	&__itemInner{
+		position:relative;
+		transform: skew(10deg);
+		padding:20px;
+	}
 	&__item{
 		width:100%;
 		transform:skewX(-10deg);
@@ -286,7 +312,8 @@ input {
 	border-top: 10px solid;
 	border-bottom: 10px solid;
 	border-image-slice: 1;
-	border-width: 3px;
+	border-width: 1px;
+	
 	margin-bottom: 20px;
 	border-image-source: linear-gradient(to right, rgba(44,164,224,0) 0%,rgba(44,164,224,0.8) 15%,rgba(44,164,224,0.93) 20%,rgba(65,173,227,1) 23%,rgba(255,255,255,1) 50%,rgba(44,164,224,1) 80%,rgba(44,164,224,1) 81%,rgba(44,164,224,0.8) 85%,rgba(44,164,224,0) 100%); 
 	}
@@ -301,6 +328,7 @@ input {
 			text-align: center;
 			&:nth-child(2){
 				margin-top:-50px;
+				margin-left:20px;
 			}
 		}
 	}
@@ -835,48 +863,50 @@ li {
 	width: 100%;
     float: left;
 }
-.jackpot_area {
-	position: relative;
-	float:left;
-	// margin-top: -210px;
-	width: 100%;
-	z-index: 1;
+.jackpot{
+	&__area{
+		position: relative;
+		float:left;
+		// margin-top: -210px;
+		width: 100%;
+		z-index: 1;
+		background-repeat: no-repeat;
+		background-size:cover;
+		background-attachment: fixed;
+	}
+	&__show {
+		position: relative;
+		margin-top: -18px;
+		// border-radius: 20px;
+		// border: 8px dotted;
+		
+		padding: 3px 3px 3px;
+		animation-name: border_animate;
+		animation-duration: 1s;
+		animation-iteration-count: infinite;
+		// background: linear-gradient(226deg, #8d1a78, #611c93);
+		background-size: 400% 400%;
+		&__inner {
+			padding: 0px 30px;
+			border-radius: 10px;
+			font-weight: bold;
+			// background-image: url("../images/embossed-diamond.png");
+			p {
+				text-align: center;
+				font-size: 54px;
+				color:$white;
+				// background: linear-gradient(135deg, #fefcea 0%, #f1da36 19%, #fefcea 52%, #f1da36 86%, #f1da36 86%);
+				background:linear-gradient(to right, rgba(44, 164, 224, 0) 0%, rgba(44, 164, 224, 0.8) 15%, rgba(44, 164, 224, 0.93) 20%, #41ade3 23%, white 50%, #2ca4e0 80%, #2ca4e0 81%, rgba(44, 164, 224, 0.8) 85%, rgba(44, 164, 224, 0) 100%);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				margin-bottom: 0px;
+			
+			}
+		}
+	}
 	
 }
 
-.jackpot_show {
-	position: relative;
-	margin-top: -18px;
-	// border-radius: 20px;
-	// border: 8px dotted;
-	
-	padding: 3px 3px 3px;
-	animation-name: border_animate;
-	animation-duration: 1s;
-	animation-iteration-count: infinite;
-	// background: linear-gradient(226deg, #8d1a78, #611c93);
-	background-size: 400% 400%;
-	.jackpot_show_inner {
-		padding: 0px 30px;
-		border-radius: 10px;
-		font-weight: bold;
-		// background-image: url("../images/embossed-diamond.png");
-		p {
-			text-align: center;
-			font-size: 54px;
-			color:$white;
-			background: linear-gradient(135deg, #fefcea 0%, #f1da36 19%, #fefcea 52%, #f1da36 86%, #f1da36 86%);
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
-			margin-bottom: 0px;
-		
-		}
-	}
-}
-.css-selector {
-	background: linear-gradient(226deg, #8d1a78, #611c93);
-	background-size: 400% 400%;
-}
 
 
 .fp-txt {
