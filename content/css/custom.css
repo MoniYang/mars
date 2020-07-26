@@ -1636,11 +1636,14 @@ li {
   height: 30px;
   width: 30px;
   margin: 0 auto;
-  background-image: url("../../images/icon/spot.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .balance i {
-  margin-right: 3px;
   font-size: 19.2px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 .balance span {
   color: #fff;
