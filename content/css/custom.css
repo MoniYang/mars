@@ -1590,16 +1590,25 @@ li {
 
 .modal-content {
   padding: 20px;
-  background-color: rgba(62, 60, 60, 0.8);
-  border: 10px solid rgba(107, 104, 104, 0.6);
+  background-color: rgba(0, 78, 115, 0.9);
+  border: 2px solid;
   border-radius: 0px;
+  border-image-slice: 1;
+  margin-bottom: 20px;
+  border-image-source: linear-gradient(to right, rgba(44, 164, 224, 0) 0%, rgba(44, 164, 224, 0.8) 15%, rgba(44, 164, 224, 0.93) 20%, #41ade3 23%, white 50%, #2ca4e0 80%, #2ca4e0 81%, rgba(44, 164, 224, 0.8) 85%, rgba(44, 164, 224, 0) 100%);
+}
+.modal-content .nav-tabs {
+  border-bottom: 0px;
+}
+.modal-content .nav-tabs button.active {
+  color: #FFDC00;
+  border-bottom: 3px solid #FFDC00;
 }
 .modal-content .close {
   color: #fff;
 }
 .modal-content .modal-header {
-  border-image-slice: 1;
-  border-image-source: linear-gradient(to right, rgba(247, 206, 0, 0.96) 25%, #f7d10a 26%, #fcf9a9 42%, #fcf9a8 43%, #f9f490 62%, #f2a900 76%);
+  padding: 0px;
 }
 .modal-content .modal-body {
   color: #fff;
@@ -1633,11 +1642,13 @@ li {
   float: right;
 }
 .balance i {
-  height: 30px;
-  width: 30px;
   margin: 0 auto;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.balance:hover {
+  color: #FFDC00;
+  transition: all 0.3s ease-in-out;
 }
 .balance i {
   font-size: 19.2px;
@@ -1659,6 +1670,9 @@ li {
   flex-direction: column;
   justify-content: center;
 }
+.support_language a:hover .langText {
+  color: #FFDC00;
+}
 
 .lang {
   display: flex;
@@ -1676,6 +1690,7 @@ li {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  width: 100%;
 }
 
 .login_btn {
@@ -1693,21 +1708,16 @@ li {
 .login_btn i {
   color: #fff;
 }
-.login_btn:focus {
+.login_btn:hover {
   outline: none;
+  color: #FFDC00;
+}
+.login_btn:hover i {
   color: #FFDC00;
 }
 
 .login_form {
-  width: 250px;
-  padding: 20px;
   display: none;
-  background-color: rgba(62, 60, 60, 0.9);
-  border: 10px solid rgba(32, 29, 29, 0.36);
-  position: absolute;
-  z-index: 100;
-  margin-top: 30px;
-  margin-left: -100px;
 }
 
 .login_form.open {

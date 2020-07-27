@@ -50,37 +50,9 @@
                 </div>
                 <div id="flag_lan" class="lang">
                   <div class="login">
-                    <button class="login_btn "> <i class="fas fa-user"></i>login</button>
+                    <button class="login_btn " data-toggle="modal" data-target="#exampleModal"> <i class="fas fa-user"></i>login</button>
                   </div>
-                  <div class="login_form">
-                    <form action="login" class="form-inline" method="POST" id="loginForm">
-                      <div class="login">
-                        <div class="form-group pull-right">
-                          <input name="password" id="passtxt" class="form-control" type="password"
-                            placeholder="Password" onclick='return false'>
-                        </div>
-                        <div class="form-group pull-right ">
-                          <input id="usertxt" name="username" id="username" class="form-control" type="text"
-                            placeholder="Username" onclick='return false'>
-                        </div>
-                        <ul class="login_btns">
-                          <li><button type="submit">Login</button></li>
-                          <li><button type="button" data-toggle="modal" data-target="#exampleModal">Register</button>
-                          </li>
-                        </ul>
-
-                        <!-- login form ends here-->
-                        <div class="d-flex justify-content-between flex-column  full-w">
-                          <span class="fp-txt">Ingat saya</span>
-                          <div class="d-flex align-items-center ">
-                            <input class="forgotpass mr-2  login--input" type="checkbox" name="remember"
-                              {{ old('remember') ? 'checked' : '' }}>
-                            <a class="fp-txt" href="{{ url('/forgot-password') }}">Forgot Password?</a>
-                          </div>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
+                 
                   <!-- login form starts here-->
                 </div>
                 <div class="support_language">
@@ -495,55 +467,101 @@
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title title_style" id="exampleModalLabel">Register</h5>
+          <ul class="nav nav-tabs">
+            <li class="">
+              <button class=" " data-toggle="tab" data-target="#login">
+                <h5 class="modal-title title_style" >Login</h5></button>
+            </li>
+            <li class="">
+              <a class="" data-toggle="tab" data-target="#register">Register</a>
+            </li>
+          </ul>
+     
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
-          <ul class="d-flex flex-wrap">
-            <li class="col-6">
+          <div class="tab-content">
+            <div class="tab-pane  active" id="login">
+              <div class="login_form">
+                <form action="login" class="form-inline" method="POST" id="loginForm">
+                  <div class="login">
+                    <div class="form-group pull-right">
+                      <input name="password" id="passtxt" class="form-control" type="password"
+                        placeholder="Password" onclick='return false'>
+                    </div>
+                    <div class="form-group pull-right ">
+                      <input id="usertxt" name="username" id="username" class="form-control" type="text"
+                        placeholder="Username" onclick='return false'>
+                    </div>
+                    <!-- <ul class="login_btns">
+                      <li><button type="submit" >Login</button></li>
+                      <li><button type="button" data-toggle="modal" data-target="#exampleModal">Register</button>
+                      </li>
+                    </ul> -->
 
-              <label for="lname">First Name</label>
-              <input type="text" id="lname" name="lname">
-
-            </li>
-            <li class="col-6">
-
-              <label for="lname">Last Name</label>
-              <input type="text" id="lname" name="lname">
-
-            </li>
-            <li class="col-12">
-              <label for="lname">E-mail: </label>
-              <input type="text" id="lname" name="lname">
-              <span class="text-red">12121321212131132123</span>
-            </li>
-            <li class="eye col-6">
-              <label for="lname">手機: </label>
-              <input type="text" id="lname" name="lname">
-            </li>
-            <li class="eye col-6">
-              <label for="lname">密碼: </label>
-              <input type="text" id="lname" name="lname">
-            </li>
-            <li class="eye col-6">
-              <label for="lname">確認密碼: </label>
-              <input type="text" id="lname" name="lname">
-            </li>
-            <li class="eye col-6">
-              <label for="lname">銀行密碼: </label>
-              <input type="text" id="lname" name="lname">
-            </li>
-            <li class="eye col-6">
-              <label for="lname">生日: </label>
-              <input type="text" id="lname" name="lname">
-            </li>
-            <li class="col-12 mt-3">
-              <label for="lname" class="left">驗證碼: </label>
-              <input type="text" id="lname" name="lname" style="width:40%"><span class="capcha_area">123445</span>
-            </li>
-          </ul>
+                    <!-- login form ends here-->
+                    <div class="d-flex justify-content-between flex-column  full-w">
+                      <span class="fp-txt">Ingat saya</span>
+                      <div class="d-flex align-items-center ">
+                        <input class="forgotpass mr-2  login--input" type="checkbox" name="remember"
+                          {{ old('remember') ? 'checked' : '' }}>
+                        <a class="fp-txt" href="{{ url('/forgot-password') }}">Forgot Password?</a>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="tab-pane  fade" id="register">
+              <ul class="d-flex flex-wrap">
+                <li class="col-6">
+    
+                  <label for="lname">First Name</label>
+                  <input type="text" id="lname" name="lname">
+    
+                </li>
+                <li class="col-6">
+    
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lname">
+    
+                </li>
+                <li class="col-12">
+                  <label for="lname">E-mail: </label>
+                  <input type="text" id="lname" name="lname">
+                  <span class="text-red">12121321212131132123</span>
+                </li>
+                <li class="eye col-6">
+                  <label for="lname">手機: </label>
+                  <input type="text" id="lname" name="lname">
+                </li>
+                <li class="eye col-6">
+                  <label for="lname">密碼: </label>
+                  <input type="text" id="lname" name="lname">
+                </li>
+                <li class="eye col-6">
+                  <label for="lname">確認密碼: </label>
+                  <input type="text" id="lname" name="lname">
+                </li>
+                <li class="eye col-6">
+                  <label for="lname">銀行密碼: </label>
+                  <input type="text" id="lname" name="lname">
+                </li>
+                <li class="eye col-6">
+                  <label for="lname">生日: </label>
+                  <input type="text" id="lname" name="lname">
+                </li>
+                <li class="col-12 mt-3">
+                  <label for="lname" class="left">驗證碼: </label>
+                  <input type="text" id="lname" name="lname" style="width:40%"><span class="capcha_area">123445</span>
+                </li>
+              </ul>
+            </div>
+       
+          </div>
+         
         </div>
         <div class="modal-footer">
           <button type="button" class="design_btn" data-dismiss="modal">Close</button>
