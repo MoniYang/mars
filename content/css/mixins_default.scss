@@ -15,6 +15,7 @@ $olive:#3D9970;
 $green:#2ECC40;
 $lime :#01FF70;
 $yellow :#FFDC00;
+$yellow_transparent:rgba(255,230,73 , 75%);
 $brown:#b58106;
 $deep_orange :#c24e12;
 $orange :#FF851B;
@@ -30,7 +31,7 @@ $black :#1a1a1a;
 $light_black:#3f3f3f;
 $theme: #004e73 ;
 $light_orange:#f7ebe0;
-$marksix_blue:#0091ff;
+
 $ci-color-dark: #f4d600;
 $theme_sed_color:#56585a;
 $theme_gradient: linear-gradient(135deg, rgba(247, 206, 0, 0.96) 25%, #f7d10a 26%, #fcf9a8 43%, #f9f490 62%, #ffc800 76%);
@@ -186,11 +187,13 @@ $btn-config:(
 
 @mixin button-bg($bg, $text , $bg_2 , $text_2) {
   background: $bg;
+  background-image: $bg;
   color: $text;
   &:active, 
   &:focus, 
   &:hover {
     background-color: $bg_2;
+    background-image:none;
     transition: all 0.3s ease;
     color: $text_2;
   }
