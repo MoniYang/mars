@@ -1074,6 +1074,7 @@ input option {
   float: left;
   display: block;
   width: 100%;
+  padding: 30px 0 80px;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -2354,10 +2355,6 @@ li {
 .lobby__quickStart {
   display: flex;
   align-items: center;
-  padding: 10px 10px 0;
-  border: 2px solid rgba(44, 164, 224, 0.93);
-  background-size: 300%;
-  background: linear-gradient(45deg, #5f9fd3 0%, #1e5799 20%, #2aa5d6 36%, #a5dcf7 50%, #2aa5d6 70%, #1e5799 81%, #6ba4d3 100%);
 }
 .lobby__quickStart p {
   font-size: 24px;
@@ -2367,7 +2364,7 @@ li {
   margin-bottom: 0px;
 }
 .lobby__quickImg {
-  width: 60%;
+  width: 100%;
 }
 .lobby__userText {
   padding-left: 0px;
@@ -2382,6 +2379,9 @@ li {
 .lobby__userText ul li:last-child {
   font-size: 15.6px;
   color: #edb229;
+}
+.lobby__list ul li {
+  float: left;
 }
 .lobby__gameItemInner {
   padding: 10px;
@@ -2398,20 +2398,45 @@ li {
   background-color: rgba(0, 78, 115, 0.3);
   border-image-source: linear-gradient(to right, #5f9fd3 0%, #1e5799 20%, #2aa5d6 36%, #a5dcf7 50%, #2aa5d6 70%, #1e5799 81%, #6ba4d3 100%);
 }
+.lobby__gametable li {
+  border-right: 1px solid #004e73;
+  text-align: center;
+  padding: 10px 10px 0;
+}
+.lobby__gametable li:first-child {
+  padding-left: 0px;
+}
+.lobby__gametable li:last-child {
+  border-right: 0px;
+  padding-right: 0px;
+}
+.lobby__gameTableButton {
+  width: 115px;
+  margin-right: 10px;
+  border-radius: 5px;
+  background: linear-gradient(45deg, #3b679e 0%, #2b88d9 50%, #207cca 51%, #7db9e8 100%);
+}
+.lobby__gameTableButton p {
+  margin-bottom: 0px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+}
 .lobby__gameTableImg {
   width: 20%;
 }
 .lobby__gameInfo {
   width: 80%;
-  padding: 10px;
+  padding: 10px 10px 5px;
   display: flex;
   flex-direction: column;
+  background-color: rgba(0, 78, 115, 0.3);
 }
 .lobby__gameTitle {
   float: left;
-  color: #1a1a1a;
-  background-color: rgba(255, 230, 73, 0.75);
+  color: #fff;
   padding: 0 5px;
+  font-size: 18px;
   margin-bottom: 0px;
 }
 .lobby__gameTable ul {
@@ -2420,8 +2445,33 @@ li {
 .lobby__gameTable ul li {
   color: #fff;
 }
+.lobby__gameTable ul li span {
+  background-color: #7355b0;
+  width: 100%;
+  float: left;
+  font-size: 12px;
+  padding: 2px 0px;
+  margin-bottom: 5px;
+}
 .lobby__gamePeople {
   color: #fff;
+  display: flex;
+  border: 1px solid #aaa;
+  border-radius: 50px;
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+}
+.lobby__gamePeople i {
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  background-color: #fff;
+  display: flex;
+  margin-right: 5px;
+  align-items: center;
+  justify-content: center;
+  color: #004e73;
 }
 
 .trans_box {
