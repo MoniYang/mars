@@ -2332,6 +2332,7 @@ li {
 .lobby__select .nav-tabs li button {
   background-image: none;
   background-color: transparent;
+  transform: scale(0.9);
 }
 .lobby__select .nav-tabs li button.active {
   transform: scale(1.05);
