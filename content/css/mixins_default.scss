@@ -9,12 +9,13 @@ $w-full:100%;
 $transparent:rgba(0, 0, 0, 0);
 $navy:#001F3F;
 $blue :#2916b6;
+$light_blue:#69B7CE;
 $aqua:#7FDBFF;
 $teal :#39CCCC;
 $olive:#3D9970;
 $green:#2ECC40;
 $lime :#01FF70;
-$yellow :#FFDC00;
+$yellow :#F4CE4B;
 $yellow_transparent:rgba(255,230,73 , 75%);
 $brown:#b58106;
 $deep_orange :#c24e12;
@@ -31,11 +32,9 @@ $black :#1a1a1a;
 $light_black:#3f3f3f;
 $theme: #004e73 ;
 $light_orange:#f7ebe0;
-
 $ci-color-dark: #f4d600;
 $theme_sed_color:#56585a;
 $theme_gradient: linear-gradient(135deg, rgba(247, 206, 0, 0.96) 25%, #f7d10a 26%, #fcf9a8 43%, #f9f490 62%, #ffc800 76%);
-
 
 
 
@@ -73,12 +72,20 @@ $baseSize: 12px;
     border-image-source: linear-gradient(to right,  rgba(247, 206, 0, 0.96) 25%, #f7d10a 26%, #fcf9a9 42%, #fcf9a8 43%, #f9f490 62%, #f2a900 76%) ;
 }
 
-
-
-
-@mixin  filter-gradient {
-  background: linear-gradient(to bottom,  rgba(9,132,233,1) 0%,rgba(4,39,163,1) 82%,rgba(4,39,163,1) 100%);
+@mixin textGradient ($color1, $color2) {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: cover;
+    background-size: 200% auto;
+    background-image: linear-gradient(to right, #FFF 20%, $color1 50%, $color2 80%, #FFF 100%);
+  // background-image: linear-gradient(to right, #FFF 20%, #FF0 50%, #FF851B 80%, #FFF 100%);
+  animation: textGradient 1s linear infinite;
+  animation-direction: alternate;
 }
+
+
+
+
 @mixin text_shadow ($text_color,$text_bg){
   color:$text-color;
   text-shadow: 5px 3px 5px $text_bg;

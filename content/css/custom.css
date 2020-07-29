@@ -811,6 +811,188 @@
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
   background: #869791;
 }
+
+@keyframes header_fixed {
+  from {
+    top: -80px;
+    opacity: 0;
+  }
+  to {
+    top: 0px;
+    opacity: 1;
+  }
+}
+@keyframes gameAni {
+  from {
+    transform: translateY(5%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+@keyframes gameAni_Alt {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(5%);
+  }
+}
+@keyframes jackpot_bg {
+  from {
+    background-position: 0 0%;
+  }
+  to {
+    background-position: 0 100%;
+  }
+}
+@keyframes gradient {
+  from {
+    background-position: -600px 0;
+  }
+  to {
+    background-position: 0% 0;
+  }
+}
+@keyframes mobile_navClose {
+  from {
+    left: 0px;
+  }
+  to {
+    left: -300px;
+  }
+}
+@keyframes mobile_navOpen {
+  from {
+    left: -300px;
+  }
+  to {
+    left: 0px;
+  }
+}
+@keyframes border_animate {
+  from {
+    border-top-color: #ecd847;
+    border-bottom-color: #e9d333;
+    border-right-color: #c59b20;
+    border-left-color: #c59b20;
+    background-position: 0% 60%;
+  }
+  to {
+    border-top-color: #c59b20;
+    border-bottom-color: #c59b20;
+    border-right-color: #e9d333;
+    border-left-color: #e9d333;
+    background-position: 100% 41%;
+  }
+}
+@keyframes jack_1 {
+  to {
+    transform: translateX(5px) translateY(-10px);
+  }
+}
+@keyframes jack_2 {
+  to {
+    transform: translateX(10px) translateY(5px);
+  }
+}
+@keyframes jack_3 {
+  to {
+    opacity: 0.8;
+    transform: rotate(45deg) translateY(5px);
+  }
+}
+@keyframes livechat_open {
+  from {
+    left: -180px;
+  }
+  to {
+    left: 0px;
+  }
+}
+@keyframes livechat_btn_open {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 97px;
+  }
+}
+@keyframes textshadow {
+  from {
+    text-shadow: 0 0 0;
+  }
+  to {
+    text-shadow: 2px 2px 5px #F0D641;
+  }
+}
+@keyframes texticon {
+  from {
+    left: 0px;
+  }
+  to {
+    left: -5px;
+  }
+}
+@keyframes nav_open {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes textGradient {
+  to {
+    background-position: 200% center;
+  }
+}
+@keyframes rightInfinite {
+  from {
+    left: 0px;
+  }
+  to {
+    left: -2%;
+  }
+}
+@keyframes rotate360 {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+/* Feel free to change duration  */
+.animated {
+  animation-duration: 1000 ms;
+  animation-fill-mode: both;
+}
+
+/* .owl-animated-out - only for current item */
+/* This is very important class. Use z-index if you want move Out item above In item */
+.owl-animated-out {
+  z-index: 1;
+}
+
+/* .owl-animated-in - only for upcoming item
+/* This is very important class. Use z-index if you want move In item above Out item */
+.owl-animated-in {
+  z-index: 0;
+}
+
+/* .fadeOut is style taken from Animation.css and this is how it looks in owl.carousel.css:  */
+.fadeOut {
+  animation-name: fadeOut;
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 html {
   overflow-x: hidden;
 }
@@ -951,16 +1133,6 @@ input option {
   color: #fff;
 }
 
-@keyframes header_fixed {
-  from {
-    top: -80px;
-    opacity: 0;
-  }
-  to {
-    top: 0px;
-    opacity: 1;
-  }
-}
 .fullPageContent {
   padding: 0 10%;
 }
@@ -1082,22 +1254,6 @@ input option {
   box-shadow: inset 0px 0px 50px 50px #1a1a1a, 5px 5px 5px 50px #1a1a1a;
 }
 
-@keyframes gameAni {
-  from {
-    transform: translateY(5%);
-  }
-  to {
-    transform: translateY(0%);
-  }
-}
-@keyframes gameAni_Alt {
-  from {
-    transform: translateY(0%);
-  }
-  to {
-    transform: translateY(5%);
-  }
-}
 .indexGame {
   background-size: cover;
   background-position: center;
@@ -1124,7 +1280,7 @@ input option {
 }
 .indexGame__itemInner, .lobby__gameItemInner {
   position: relative;
-  transform: skew(10deg);
+  transform: skew(0deg);
   padding: 20px;
 }
 @media only screen and (max-width: 991px) {
@@ -1134,13 +1290,13 @@ input option {
 }
 .indexGame__item, .lobby__gameItem {
   width: 100%;
-  transform: skewX(-10deg);
+  transform: skewX(0deg);
   background-color: rgba(0, 78, 115, 0.1);
   border-top: 10px solid;
   border-bottom: 10px solid;
   border-image-slice: 1;
   border-width: 1px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   border-image-source: linear-gradient(to right, rgba(44, 164, 224, 0) 0%, rgba(44, 164, 224, 0.8) 15%, rgba(44, 164, 224, 0.93) 20%, #41ade3 23%, white 50%, #2ca4e0 80%, #2ca4e0 81%, rgba(44, 164, 224, 0.8) 85%, rgba(44, 164, 224, 0) 100%);
 }
 .indexGame ul {
@@ -1252,7 +1408,7 @@ li {
   margin-right: 10px;
 }
 .login_btns li:hover button {
-  color: #FFDC00;
+  color: #F4CE4B;
   transition: all 0.3s ease-in-out;
 }
 .login_btns li:first-child:after {
@@ -1597,6 +1753,7 @@ li {
   border: 2px solid;
   border-radius: 0px;
   border-image-slice: 1;
+  border-radius: 5px;
   margin-bottom: 20px;
   border-image-source: linear-gradient(to right, rgba(44, 164, 224, 0) 0%, rgba(44, 164, 224, 0.8) 15%, rgba(44, 164, 224, 0.93) 20%, #41ade3 23%, white 50%, #2ca4e0 80%, #2ca4e0 81%, rgba(44, 164, 224, 0.8) 85%, rgba(44, 164, 224, 0) 100%);
 }
@@ -1635,6 +1792,11 @@ li {
 .modal-content .modal-body li span {
   font-size: 12px;
 }
+.modal-content.quick__area {
+  background-color: transparent;
+  border: 0px;
+}
+
 .top-menu {
   display: flex;
   padding: 5px 0 0;
@@ -1656,7 +1818,7 @@ li {
   background-size: cover;
 }
 .balance:hover {
-  color: #FFDC00;
+  color: #F4CE4B;
   transition: all 0.3s ease-in-out;
 }
 .balance i {
@@ -1687,7 +1849,7 @@ li {
   margin-bottom: 3px;
 }
 .support_language:hover .langText {
-  color: #FFDC00;
+  color: #F4CE4B;
 }
 
 .lang {
@@ -1729,7 +1891,7 @@ li {
   color: #FFDC00;
 }
 .login_btn:hover i {
-  color: #FFDC00;
+  color: #F4CE4B;
 }
 
 .login_form {
@@ -1745,14 +1907,6 @@ li {
   float: left;
 }
 
-@keyframes jackpot_bg {
-  from {
-    background-position: 0 0%;
-  }
-  to {
-    background-position: 0 100%;
-  }
-}
 .jackpot__area {
   position: relative;
   float: left;
@@ -1831,14 +1985,6 @@ li {
   font-weight: bold;
 }
 
-@keyframes gradient {
-  from {
-    background-position: -600px 0;
-  }
-  to {
-    background-position: 0% 0;
-  }
-}
 .fp-txt {
   color: #aaa;
 }
@@ -2286,7 +2432,7 @@ li {
   text-transform: uppercase;
 }
 .index_promo_inner ul li:hover p {
-  color: #FFDC00;
+  color: #F4CE4B;
   transition: all 0.3s ease-in-out;
 }
 .index_promo_inner ul li:hover img {
@@ -2323,9 +2469,30 @@ li {
   }
 }
 
+.tab-content {
+  float: left;
+  width: 100%;
+}
+
+.rightInfinite {
+  position: relative;
+  animation: rightInfinite 1s infinite cubic-bezier(0.12, 0.73, 0.32, 0.9);
+}
+
+.hot {
+  background-color: #FF851B !important;
+}
+
 .lobby {
   width: 100%;
-  padding: 50px 0;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 0 0;
+}
+.lobby__area {
+  min-height: 45vh;
+  max-height: 45vh;
+  overflow-y: auto;
 }
 .lobby__select .nav-tabs li {
   width: 33.3%;
@@ -2333,13 +2500,10 @@ li {
 .lobby__select .nav-tabs li button {
   background-image: none;
   background-color: transparent;
-  transform: scale(0.9);
-}
-.lobby__select .nav-tabs li button.active {
-  transform: scale(1.05);
+  padding: 0px;
 }
 .lobby__select .nav-tabs li button.active .lobby__gameItem {
-  background-color: rgba(0, 78, 115, 0.4);
+  background: linear-gradient(45deg, rgba(105, 183, 206, 0.3) 0%, rgba(43, 136, 217, 0.3) 50%, rgba(105, 183, 206, 0.3) 51%, rgba(125, 185, 232, 0.3) 100%);
 }
 .lobby__userInfo {
   display: flex;
@@ -2348,20 +2512,45 @@ li {
   border-width: 1px;
   background-color: rgba(0, 78, 115, 0.3);
   border-image-source: linear-gradient(to right, #5f9fd3 0%, #1e5799 20%, #2aa5d6 36%, #a5dcf7 50%, #2aa5d6 70%, #1e5799 81%, #6ba4d3 100%);
-  padding: 10px 0;
+  padding: 5px 0;
   align-items: center;
   margin-bottom: 10px;
 }
 .lobby__quickStart {
   display: flex;
-  align-items: center;
+  align-items: baseline;
+}
+.lobby__quickStart:before {
+  content: "";
+  display: block;
+  height: 80px;
+  width: 90%;
+  border-image-slice: 1;
+  padding: 5px;
+  margin-top: 30px;
+  position: absolute;
+  border: 1px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(120deg, rgba(234, 50, 50, 0.8) 0%, rgba(213, 126, 235, 0.8) 100%);
 }
 .lobby__quickStart p {
-  font-size: 24px;
-  font-weight: initial;
+  font-size: 21.6px;
+  font-weight: bold;
   line-height: 1.1;
   text-transform: uppercase;
   margin-bottom: 0px;
+  text-align: left;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: cover;
+  background-size: 200% auto;
+  background-image: linear-gradient(to right, #FFF 20%, #F4CE4B 50%, #FF851B 80%, #FFF 100%);
+  animation: textGradient 1s linear infinite;
+  animation-direction: alternate;
+}
+.lobby__quickStart p span {
+  color: #F4CE4B;
 }
 .lobby__quickImg {
   width: 100%;
@@ -2374,47 +2563,88 @@ li {
   font-size: 13.2px;
 }
 .lobby__userText ul li:nth-child(2) {
-  font-size: 18px;
+  font-size: 14.4px;
 }
 .lobby__userText ul li:last-child {
   font-size: 15.6px;
   color: #edb229;
 }
 .lobby__list ul li {
+  padding: 0 5px 5px;
   float: left;
+  cursor: pointer;
+}
+.lobby__list ul li:nth-child(odd) {
+  padding-left: 0px;
+}
+.lobby__list ul li:nth-child(even) {
+  padding-right: 0px;
+}
+.lobby__gameItem {
+  margin-bottom: 3px;
 }
 .lobby__gameItemInner {
-  padding: 10px;
+  padding: 5px 15px;
 }
 .lobby__list li {
   width: 50%;
-  padding: 10px;
+  margin-bottom: 5px;
 }
 .lobby__gametable {
   border: 10px solid;
   border-image-slice: 1;
-  padding: 10px;
+  padding: 5px;
   border-width: 1px;
-  background-color: rgba(0, 78, 115, 0.3);
   border-image-source: linear-gradient(to right, #5f9fd3 0%, #1e5799 20%, #2aa5d6 36%, #a5dcf7 50%, #2aa5d6 70%, #1e5799 81%, #6ba4d3 100%);
+}
+.lobby__gametable.active, .lobby__gametable:hover {
+  transition: all 0.3s ease-in-out;
+  background-image: linear-gradient(120deg, rgba(157, 101, 246, 0.3) 0%, rgba(179, 0, 181, 0.8) 100%);
+  border-image-source: linear-gradient(120deg, rgba(157, 101, 246, 0.3) 0%, rgba(179, 0, 181, 0.8) 100%);
+}
+.lobby__gametable.active .lobby__gameTable, .lobby__gametable:hover .lobby__gameTable {
+  background-image: linear-gradient(120deg, rgba(157, 101, 246, 0.3) 0%, rgba(179, 0, 181, 0.8) 100%);
+}
+.lobby__gametable.active .lobby__gameInfo, .lobby__gametable:hover .lobby__gameInfo {
+  background-color: transparent;
+}
+.lobby__gametable.active .lobby__gameTableButton, .lobby__gametable:hover .lobby__gameTableButton {
+  background-image: linear-gradient(45deg, #cb60b3 0%, #c146a1 50%, #a80077 51%, #db36a4 100%);
+}
+.lobby__gametable.hot_active {
+  border-image-source: linear-gradient(120deg, rgba(234, 50, 50, 0.8) 0%, rgba(213, 126, 235, 0.8) 100%);
+  background-image: linear-gradient(120deg, rgba(234, 50, 50, 0.5) 0%, rgba(213, 126, 235, 0.5) 100%);
+}
+.lobby__gametable.hot_active .lobby__gameTable {
+  background: linear-gradient(45deg, rgba(254, 204, 177, 0.1) 0%, rgba(241, 116, 50, 0.1) 50%, rgba(234, 85, 7, 0.1) 51%, rgba(251, 149, 94, 0.1) 100%);
+}
+.lobby__gametable.hot_active .lobby__gameTableButton {
+  background: linear-gradient(45deg, #feccb1 0%, #f17432 50%, #ea5507 51%, #fb955e 100%);
+  background-color: transparent;
 }
 .lobby__gametable li {
   border-right: 1px solid #004e73;
   text-align: center;
-  padding: 10px 10px 0;
+  padding: 5px 5px 5px !important;
+  margin-bottom: 0px;
 }
 .lobby__gametable li:first-child {
   padding-left: 0px;
 }
 .lobby__gametable li:last-child {
   border-right: 0px;
-  padding-right: 0px;
+}
+.lobby__gametable li:nth-child(odd) {
+  padding-left: 5x;
+}
+.lobby__gametable li:nth-child(even) {
+  padding-right: 5x;
 }
 .lobby__gameTableButton {
   width: 115px;
-  margin-right: 10px;
+  margin-left: 10px;
   border-radius: 5px;
-  background: linear-gradient(45deg, #3b679e 0%, #2b88d9 50%, #207cca 51%, #7db9e8 100%);
+  background: linear-gradient(45deg, #69B7CE 0%, #2b88d9 50%, #69B7CE 51%, #7db9e8 100%);
 }
 .lobby__gameTableButton p {
   margin-bottom: 0px;
@@ -2426,18 +2656,20 @@ li {
   width: 20%;
 }
 .lobby__gameInfo {
-  width: 80%;
-  padding: 10px 10px 5px;
+  width: 30%;
+  padding: 5px;
   display: flex;
   flex-direction: column;
-  background-color: rgba(0, 78, 115, 0.3);
 }
 .lobby__gameTitle {
   float: left;
   color: #fff;
-  padding: 0 5px;
-  font-size: 18px;
+  padding: 0 0px;
+  font-size: 15.6px;
   margin-bottom: 0px;
+}
+.lobby__gameTable {
+  background-color: rgba(0, 78, 115, 0.3);
 }
 .lobby__gameTable ul {
   display: flex;
@@ -2461,6 +2693,7 @@ li {
   padding-right: 10px;
   display: flex;
   align-items: center;
+  letter-spacing: 1px;
 }
 .lobby__gamePeople i {
   width: 25px;
@@ -2472,6 +2705,67 @@ li {
   align-items: center;
   justify-content: center;
   color: #004e73;
+}
+.lobby__gameboard {
+  border: 2px solid;
+  display: flex;
+  justify-content: space-between;
+  border-right: 0px;
+  border-left: 0px;
+  margin-bottom: 10px;
+  border-image-slice: 1;
+  padding: 5px 10px;
+  width: 100%;
+  background-color: rgba(0, 78, 115, 0.3);
+  border-image-source: linear-gradient(to right, #5f9fd3 0%, #1e5799 20%, #2aa5d6 36%, #a5dcf7 50%, #2aa5d6 70%, #1e5799 81%, #6ba4d3 100%);
+}
+.lobby__gameboard ul {
+  display: flex;
+  padding: 0 10px;
+}
+.lobby__gameboard ul li {
+  margin-right: 10px;
+}
+.lobby__gameboard ul li i {
+  margin-right: 5px;
+}
+.lobby__gameboard ul li:hover button {
+  color: #F4CE4B;
+  transition: all 0.3s ease-in-out;
+}
+.lobby__gameboard ul li:active i {
+  animation: rotate360 0.3s infinite;
+}
+.lobby__gameHot {
+  background-color: #FF4136;
+  color: #fff;
+  padding: 0 3px;
+  font-size: 12px;
+  margin-bottom: 0px;
+  margin-top: -20px;
+  margin-left: -20px;
+  transform: rotate(-20deg);
+}
+.lobby__gameHot i {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: cover;
+  background-size: 200% auto;
+  background-image: linear-gradient(to right, #FFF 20%, #F4CE4B 50%, #FF851B 80%, #FFF 100%);
+  animation: textGradient 1s linear infinite;
+  animation-direction: alternate;
+}
+.lobby__gameTopic {
+  font-size: 18px;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+}
+
+.quick__choice ul {
+  display: flex;
+}
+.quick__choice ul li {
+  width: 25%;
 }
 
 .trans_box {
@@ -2556,7 +2850,7 @@ li {
   line-height: 1.1;
 }
 .wallet__btn:hover, .wallet__btn:focus {
-  background-color: #FFDC00;
+  background-color: #F4CE4B;
   color: #1a1a1a;
   transition: all 0.3s ease-in-out;
 }
@@ -3176,7 +3470,7 @@ img {
 .bonusItem__num {
   font-size: 48px;
   font-weight: bold;
-  border-right: 1px solid #FFDC00;
+  border-right: 1px solid #F4CE4B;
   display: block;
   float: left;
   width: 100%;
@@ -3699,124 +3993,6 @@ img {
   .userFoto {
     max-width: 120px;
     height: 120px;
-  }
-}
-@keyframes mobile_navClose {
-  from {
-    left: 0px;
-  }
-  to {
-    left: -300px;
-  }
-}
-@keyframes mobile_navOpen {
-  from {
-    left: -300px;
-  }
-  to {
-    left: 0px;
-  }
-}
-@keyframes border_animate {
-  from {
-    border-top-color: #ecd847;
-    border-bottom-color: #e9d333;
-    border-right-color: #c59b20;
-    border-left-color: #c59b20;
-    background-position: 0% 60%;
-  }
-  to {
-    border-top-color: #c59b20;
-    border-bottom-color: #c59b20;
-    border-right-color: #e9d333;
-    border-left-color: #e9d333;
-    background-position: 100% 41%;
-  }
-}
-@keyframes jack_1 {
-  to {
-    transform: translateX(5px) translateY(-10px);
-  }
-}
-@keyframes jack_2 {
-  to {
-    transform: translateX(10px) translateY(5px);
-  }
-}
-@keyframes jack_3 {
-  to {
-    opacity: 0.8;
-    transform: rotate(45deg) translateY(5px);
-  }
-}
-@keyframes livechat_open {
-  from {
-    left: -180px;
-  }
-  to {
-    left: 0px;
-  }
-}
-@keyframes livechat_btn_open {
-  from {
-    left: 0px;
-  }
-  to {
-    left: 97px;
-  }
-}
-@keyframes textshadow {
-  from {
-    text-shadow: 0 0 0;
-  }
-  to {
-    text-shadow: 2px 2px 5px #F0D641;
-  }
-}
-@keyframes texticon {
-  from {
-    left: 0px;
-  }
-  to {
-    left: -5px;
-  }
-}
-@keyframes nav_open {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-/* Feel free to change duration  */
-.animated {
-  animation-duration: 1000 ms;
-  animation-fill-mode: both;
-}
-
-/* .owl-animated-out - only for current item */
-/* This is very important class. Use z-index if you want move Out item above In item */
-.owl-animated-out {
-  z-index: 1;
-}
-
-/* .owl-animated-in - only for upcoming item
-/* This is very important class. Use z-index if you want move In item above Out item */
-.owl-animated-in {
-  z-index: 0;
-}
-
-/* .fadeOut is style taken from Animation.css and this is how it looks in owl.carousel.css:  */
-.fadeOut {
-  animation-name: fadeOut;
-}
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
   }
 }
 /*# sourceMappingURL=custom.css.map */
