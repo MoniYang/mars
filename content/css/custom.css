@@ -2766,6 +2766,54 @@ li {
 }
 .quick__choice ul li {
   width: 25%;
+  padding: 0px 10px 30px !important;
+}
+.quick__item {
+  border-radius: 10px;
+  color: #1a1a1a;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  padding-bottom: 20px;
+}
+.quick__item.gold_style {
+  background: linear-gradient(35deg, #413412 0%, #a39171 31.16%, #d2c3a8 55.31%, #97825f 81.88%, #baac8c 100%);
+}
+.quick__item.silver_style {
+  background: linear-gradient(35deg, #d9d9d9 0%, #b4b4b4 18.12%, #787878 44.2%, gainsboro 67.39%, gainsboro 82.37%, #5f5f5f 100%);
+}
+.quick__item.regular_style {
+  background: linear-gradient(35deg, #2c3639 0%, #47555c 8.42%, #637580 18.71%, #778c9b 28.34%, #849aaa 36.96%, #889fb0 43.72%, #7e94a3 50.67%, #647682 63.45%, #3b474c 80.51%, #2c3639 85.99%, #2f3a3d 89.67%, #3a4449 93.35%, #4a565d 97.03%, #5d6a73 100%);
+}
+.quick__item.Platinum_style {
+  background: linear-gradient(35deg, #867876 0%, #786a68 5.88%, #5f514f 18.35%, #4f4240 29.71%, #4a3d3b 38.89%, #4f4240 43.4%, #5d504d 48.72%, #756763 54.45%, #968783 60.46%, #c0b0aa 66.64%, #d5c4be 69.32%, #7b685f 100%);
+}
+.quick__item img {
+  padding-top: 30px;
+  position: relative;
+  z-index: 1;
+  max-width: 200px;
+}
+.quick__item:before {
+  content: "";
+  display: block;
+  width: 200%;
+  left: 0%;
+  height: 275px;
+  position: absolute;
+  border-radius: 0 0 100% 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.quick__item p {
+  margin-bottom: 0px;
+}
+.quick__smallTile {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.quick__text {
+  font-weight: bold;
 }
 
 .trans_box {
