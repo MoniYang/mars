@@ -61,10 +61,17 @@ $baseSize: 12px;
   width: 100%;
 
 }
+@mixin title_gradient {
+  background: linear-gradient(to right, #70f4f4 0%, #2aa5d6 16%, #95eff9 29%, #f4feff 50%, #95eff9 69%, #2aa5d6 85%, #70f4f4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: cover;
+}
 @mixin border-small-style{
-    border-image-slice: 1;
-    border-width: 1px;
-    border-image-source:linear-gradient(to right, #fefcea 0%, #fefcea 0%, #f7ce00 26%, #fcf9a9 41%, #fffcdb 44%, #f9f490 62%, #f2a900 87%, #f2a900 87%, #f2a900 88%, #fcf649 100%);
+  border-image-source: linear-gradient(to right, rgba(44, 164, 224, 0) 0%, rgba(44, 164, 224, 0.8) 15%, rgba(44, 164, 224, 0.93) 20%, #41ade3 23%, white 50%, #2ca4e0 80%, #2ca4e0 81%, rgba(44, 164, 224, 0.8) 85%, rgba(44, 164, 224, 0) 100%);
+  
+  border-image-slice: 1;
+  border-width: 1px;
 }
 
 @mixin border-style{

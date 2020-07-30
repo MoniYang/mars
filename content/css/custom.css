@@ -1194,14 +1194,16 @@ input option {
 }
 
 .userBox__title {
-  background: linear-gradient(to right, #fefcea 0%, #fefcea 0%, #f7ce00 26%, #fcf9a9 41%, #fffcdb 44%, #f9f490 62%, #f2a900 87%, #f2a900 87%, #f2a900 88%, #fcf649 100%);
+  background: linear-gradient(to right, #70f4f4 0%, #2aa5d6 16%, #95eff9 29%, #f4feff 50%, #95eff9 69%, #2aa5d6 85%, #70f4f4 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 18px;
-  border-bottom: 1px solid #efefef;
-  float: left;
+  background-size: cover;
+  border-image-source: linear-gradient(to right, rgba(44, 164, 224, 0) 0%, rgba(44, 164, 224, 0.8) 15%, rgba(44, 164, 224, 0.93) 20%, #41ade3 23%, white 50%, #2ca4e0 80%, #2ca4e0 81%, rgba(44, 164, 224, 0.8) 85%, rgba(44, 164, 224, 0) 100%);
   border-image-slice: 1;
-  border-image-source: linear-gradient(to right, rgba(247, 206, 0, 0.96) 25%, #f7d10a 26%, #fcf9a9 42%, #fcf9a8 43%, #f9f490 62%, #f2a900 76%);
+  border-width: 1px;
+  border-bottom: solid;
+  font-size: 18px;
+  float: left;
 }
 
 .visual {
@@ -1238,7 +1240,7 @@ input option {
 }
 
 .wrapper {
-  margin-top: 80px;
+  margin-top: 120px;
   float: left;
   width: 100%;
 }
@@ -1490,7 +1492,6 @@ li {
 
 .userFoto {
   background-color: #fff;
-  padding: 20px;
   display: flex;
   align-items: center;
   max-width: 150px;
@@ -1905,6 +1906,7 @@ li {
 .index_slider.owl-carousel {
   width: 100%;
   float: left;
+  margin-top: -40px;
 }
 
 .jackpot__area {
@@ -2253,6 +2255,7 @@ li {
   text-transform: uppercase;
   background-color: #1a7099;
   color: #ddd;
+  border: 1px solid #2986b3;
 }
 .nav-tabs li button.active {
   color: #004e73;
@@ -2759,6 +2762,7 @@ li {
   font-size: 18px;
   margin-bottom: 0px;
   text-transform: uppercase;
+  line-height: 1.5;
 }
 
 .quick__choice ul {
@@ -2767,10 +2771,11 @@ li {
 .quick__choice ul li {
   width: 25%;
   padding: 0px 10px 30px !important;
+  cursor: pointer;
 }
 .quick__item {
   border-radius: 10px;
-  color: #1a1a1a;
+  color: #fff;
   overflow: hidden;
   position: relative;
   text-align: center;
@@ -2811,9 +2816,14 @@ li {
 .quick__smallTile {
   font-size: 18px;
   text-transform: uppercase;
+  position: relative;
+  z-index: 1;
 }
 .quick__text {
   font-weight: bold;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 5px !important;
 }
 
 .trans_box {
@@ -3657,7 +3667,8 @@ img {
   margin-right: 5px;
 }
 .design_btn i {
-  margin-right: 5px;
+  margin: 0 5px;
+  font-size: 15.6px;
 }
 
 .theme_btn {

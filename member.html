@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="content/css/bootstrap.css">
+	<link rel="stylesheet" href="content/css/custom.css">
+	<link rel="stylesheet" href="content/css/all.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<div id="header_fullwidth" class="header">
+		<div class="header__inner">
+		  <div class="fullPageContent">
+			<div id="header" class=" header_nav">
+			
+			  <!-- header logo -->
+			  <div class="d-flex justify-content-around  w-full">
+				<div class="mobileNav__btn">
+				  <i class="fa fa-bars" aria-hidden="true"></i>
+				</div>
+				<div class="col-xl-2 p-0">
+				  <div class="logo ">
+					<a href="home.html">
+					  <img src="content/images/logo.png" class="logo_b">
+					  <img src="content/images/logo_w.png" class="logo_w">
+					</a>
+				  </div>
+				</div>
+				<!-- navigation -->
+				<div class="col-xl-7  col-lg-8 p-0 nav">
+				  <div class="nav_top">
+					<ul>
+					  <li><a href="lobby.html">Lobby</a></li>
+					  <li><a href="promotion.html">promotion </a></li>
+					  <li><a href="transfer.html">Ａffiliate</a></li>
+					  <li><a href="transaction.html">crypto</a></li>
+					  <li><a href="transaction.html">Transaction</a></li>
+					  <li><a href="transaction.html">payment</a></li>
+					  <li><a href="member.html">Profile</a></li>
+					</ul>
+				  </div>
+				</div>
+				<div class="col-xl-3 nav p-0">
+				  <div class="d-flex justify-content-around align-items-center w-full">
+					<div class="balance">
+					  <i class="fas fa-comments-dollar"></i><span>$1,123,456 </span>
+					</div>
+					<div id="flag_lan" class="lang">
+					  <div class="login">
+						<button class="login_btn " data-toggle="modal" data-target="#exampleModal"> <i class="fas fa-user"></i>login</button>
+					  </div>
+					 
+					  <!-- login form starts here-->
+					</div>
+					<div class="support_language">
+					 
+						<div class="langText"><i class="fas fa-globe-americas mr-1"></i>
+						   <select name="" id="">
+							 <option value="">Indonesia </option>
+							 <option value="">English </option>
+						   </select>
+						</div>
+					  
+					</div>
+				  </div>
+				</div>
+			  </div>
+			  <!-- div nav-border -->
+			</div>
+		  </div>
+		</div>
+		<div class="header__img"></div>
+	  </div>
+	<div class="livechat">
+		<div class="livechat--contact livechat--btn">
+			<p>Contact us</p>
+		</div>
+		<div class="box">
+			<div class="toptobottom"> <img src="images/svg/live.svg" alt=""></div>
+			<ul>
+				<li>
+					<div class="live-text">
+						<p> <a href=""><i class="fa fa-whatsapp" aria-hidden="true"></i>Whatsapp </a></p>
+					</div>
+				</li>
+				<li class="live-item">
+					<div class="live-text">
+						<p><a href=""> <i class="fa fa-weixin" aria-hidden="true"></i>wechat </a></p>
+					</div>
+				</li>
+				<li class="live-item">
+					<div class="live-text">
+						<p> <a href=""> line </a></p>
+					</div>
+				</li>
+				<li class="live-item">
+					<div class="live-text">
+						<p> <a href=""><i class="fa fa-skype" aria-hidden="true"></i>skype </a></p>
+					</div>
+				</li>
+				<li class="live-item">
+					<div class="live-text">
+						<p> <a href=""> <i class="fa fa-instagram" aria-hidden="true"></i>instagram </a></p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="wrapper">
+		<div class="container">
+			<div class="d-flex flex-wrap">
+				<div class="userLink">
+					<!-- Nav tabs -->
+					<div class=" col-12">
+						<ul class="nav nav-tabs" id="myTab" role="tablist">
+							<li class="" role="presentation">
+								<button class=" " id="home-tab" data-toggle="tab" data-target="#userInfo" role="tab"
+									aria-controls="home" aria-selected="true"><i class="fas fa-users-cog"></i><span>user Info</span>
+								</button>
+							</li>
+							<li class="" role="presentation">
+								<button class="" id="profile-tab" data-toggle="tab" data-target="#betHistory" role="tab"
+									aria-controls="profile" aria-selected="false"><i class="fas fa-file-medical-alt"></i> <span>Bet
+										History</span> </a>
+							</li>
+							<li class="" role="presentation">
+								<button class="active" id="messages-tab" data-toggle="tab" data-target="#statement" role="tab"
+									aria-controls="messages" aria-selected="false"><i class="fas fa-receipt"></i><span>statement</span>
+								</button>
+							</li>
+						</ul>
+					</div>
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<div class="tab-pane active" id="userInfo" role="tabpanel" aria-labelledby="home-tab">
+							<div class="d-flex flex-wrap">
+								<div class="col-lg-3 col-12 text-right">
+									<button class="mobieUserInfo--btn design_btn d-block d-lg-none mb-2 mb-md-3"> <i class="fas fa-address-book"></i> User Info </button>
+								
+									<div class="userInfo">
+										<div class="userFoto">
+											<img src="content/images/user.png" alt="">
+											<button class="userFoto--btn"></button>
+										</div>
+										<div class="userInfo--edit"><i class="fas fa-user-edit"></i>Edit</div>
+										<ul>
+											<li>
+												<span>Accout :</span>
+												<span class="show_text">Elvin</span>
+												<span class="show_input" style="display: none;">
+													<input type="text" name="fname" placeholder="First Name" class="mr-2"
+														style="width:40%;float:left;">
+													<input type="text" name="fname" placeholder="Last Name" style="width:40%;float:left">
+												</span>
+											</li>
+											<li>
+												<span>Name: </span><span>1234567</span>
+											</li>
+											<li>
+												<span>Accumulative Betting Amount :</span>
+												<span class="yellow">000001234567</span>
+											</li>
+											<li>
+												<span>VIP Level： </span>
+												<span class="yellow">1234567</span>
+											</li>
+											<li>
+												<span>Ｅ-mail:</span>
+												<span class="show_text"> aa1234567@gmail.com</span>
+												<span class="show_input" style="display: none;">
+													<input type="text" name="fname" placeholder="E-mail">
+												</span>
+											</li>
+											<li>
+												<span>Mobile Phone :</span>
+												<span class="show_text">+886-0911-123456</span>
+												<span class="show_input" style="display: none;">
+													<input type="text" name="fname" placeholder="Phone">
+												</span>
+											</li>
+										</ul>
+										<button type="button" class="userInfo--submit design_btn mb-3" data-toggle="modal"
+											data-target="#addcard">
+											<i class="fa fa-plus" aria-hidden="true"></i>sutmit
+										</button>
+									</div>
+								</div>
+								<div class="col-lg-9 col-12">
+									<div class="userBox">
+										<ul>
+											<li>
+												<div class="userTime">
+													<h3 class="userBox__title">
+														User Time
+													</h3>
+													<ul>
+														<li>Login Time: 2019-11-30 22:50:36</li>
+														<li>Last Login Time : 2019-11-30 22:50:36</li>
+														<li>Login IP : 192.168.1.1</li>
+														<li>Referral Fee Release Time : </li>
+													</ul>
+												</div>
+											</li>
+											<li>
+												<div class="userTime">
+													<h3 class="userBox__title">
+														Transaction Info
+													</h3>
+													<ul>
+														<li>Balance : 1984126759.6386 </li>
+														<li>Monthly Accumulative Deposit Amount : </li>
+														<li>Deposit Amount:</li>
+														<li>Hi ghest Win : </li>
+														<li>Total Betting Amount:</li>
+													</ul>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="userBank">
+										<h3 class="userBox__title">Bank Card Info</h3>
+										<button class="userBank--add design_btn">
+											<i class="fas fa-plus-circle"></i> Add Card
+										</button>
+										<div class="userBank__addCard">
+											<div class="d-flex flex-wrap">
+												<div class="col-md-9 col-12 p-0">
+													<div class="d-flex flex-sm-row flex-column">
+														<select class="form-control mr-10" name="" id="">
+															<option value="">121313</option>
+															<option value="">121313</option>
+															<option value="">121313</option>
+															<option value="">121313</option>
+														</select>
+														<input name="password" id="passtxt" class="form-control" type="password"
+															placeholder="Password" onclick="return false">
+													</div>
+												</div>
+												<div class="col-md-3 col-12 text-center text-md-right p-0">
+													<button class="design_btn userBank__submitBtn">Submit
+														<i class="fas fa-check-circle  mr-0"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+										<div class="userBank__card ">
+											<ul class="">
+												<li class="">
+													<div class="userBank__item">
+														<ul class="userBank__btns">
+															<li><button class="userBank--edit"><i class="fas fa-edit"></i></button></li>
+															<li><button class="userBank--delete"><i class="fas fa-trash-alt"></i></button></li>
+														</ul>
+														<p class="userBank__name">Card Name</p>
+														<p class="userBank__num">1234 1234 1234 1234</p>
+													</div>
+												</li>
+												<li class="">
+													<div class="userBank__item">
+														<ul class="userBank__btns">
+															<li><button class="userBank--edit"><i class="fas fa-edit"></i></button></li>
+															<li><button class="userBank--delete"><i class="fas fa-trash-alt"></i></button></li>
+														</ul>
+														<p class="userBank__name">Card Name</p>
+														<p class="userBank__num">1234 1234 1234 1234</p>
+													</div>
+												</li>
+												<li class="">
+													<div class="userBank__item">
+														<ul class="userBank__btns">
+															<li><button class="userBank--edit"><i class="fas fa-edit"></i></button></li>
+															<li><button class="userBank--delete"><i class="fas fa-trash-alt"></i></button></li>
+														</ul>
+														<p class="userBank__name">Card Name</p>
+														<p class="userBank__num">1234 1234 1234 1234</p>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane " id="betHistory" role="tabpanel" aria-labelledby="profile-tab">
+							<div class="d-flex flex-column flex-lg-row justify-content-between mb-2">
+								<div class="col-lg-6 col-12  p-0">
+									<div class="history__select">
+										<ul class="d-flex flex-wrap">
+											<li class="col-4">
+												<select class="ng-pristine ng-valid ng-not-empty ng-touched">
+													<option value="number:-1" selected="selected">--Status--</option>
+													<option value="number:0">All</option>
+													<option value="number:1">Opened</option>
+													<option value="number:2">Pending</option>
+												</select>
+											</li>
+											<li class="col-4">
+												<select class="">
+													<option label="--Game Class--" value="object:286" selected="selected">--Game Class--
+													</option>
+													<option label="All" value="object:287">All</option>
+													<option label="HKGP" value="object:288">HKGP</option>
+													<option label="HKLotto" value="object:289">HKLotto</option>
+													<option label="Sicbo" value="object:290">Sicbo</option>
+													<option label="4DLotto" value="object:291">4DLotto</option>
+													<option label="2DNumberGame" value="object:292">2DNumberGame</option>
+													<option label="PragmaticPlaySlot" value="object:293">PragmaticPlaySlot</option>
+												</select>
+											</li>
+											<li class="col-4">
+												<select class="ng-pristine ng-valid ng-not-empty ng-touched">
+													<option label="--Game Type--" value="object:294" selected="selected">--Game Type--</option>
+													<option label="All" value="object:295">All</option>
+												</select>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-lg-5 col-12  p-0">
+									<div class="date_search ">
+										<ul class="d-flex justify-content-lg-end justify-content-start">
+											<!-- <li class="search_title  mr-2 mt-0">Search</li> -->
+											<li>
+												<input type="date" ng-model="dataSource.searchCondition.dateS"
+													class="ng-pristine ng-valid ng-not-empty ng-touched">
+											</li>
+											<li>~</li>
+											<li>
+												<input type="date" ng-model="dataSource.searchCondition.dateE"
+													class="ng-pristine ng-valid ng-not-empty ng-touched">
+											</li>
+											<li>
+												<button ng-click="search()" class="circle_btn">go</button>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="real_table mb-2">
+								<table>
+									<tbody>
+										<tr>
+											<th>Bet type</th>
+											<th> Bill NO.</th>
+											<th>bet time</th>
+											<th class="hidden-sm hidden-xs">bet</th>
+											<th class="hidden-sm hidden-xs">opening time</th>
+											<th>bet amount</th>
+											<th>win/lose</th>
+											<th>status</th>
+										</tr>
+										<tr>
+											<td>HKGP10 1min</td>
+											<td><button id="AddReceiptImagesModal" data-toggle="modal" data-target="#AddReceiptImages">
+
+													2132132132<i class="fa fa-external-link " aria-hidden="true"></i>
+												</button></td>
+											<td class="hidden-sm hidden-xs">2020-03-05</td>
+											<td class="hidden-sm hidden-xs">大小</td>
+											<td class="hidden-sm hidden-xs">2020-03-05</td>
+
+											<td>-$1234567</td>
+											<td>$20000000</td>
+											<td class="yellow">opened</td>
+										</tr>
+										<tr>
+											<td>HKGP10 1min</td>
+											<td><button id="AddReceiptImagesModal" data-toggle="modal" data-target="#AddReceiptImages">
+
+													2132132132<i class="fa fa-external-link " aria-hidden="true"></i>
+												</button></td>
+											<td class="hidden-sm hidden-xs">2020-03-05</td>
+											<td class="hidden-sm hidden-xs">大小</td>
+											<td class="hidden-sm hidden-xs">2020-03-05</td>
+
+											<td>-$1234567</td>
+											<td>$20000000</td>
+											<td class="yellow">opened</td>
+										</tr>
+										<tr>
+											<td>HKGP10 1min</td>
+											<td><button id="AddReceiptImagesModal" data-toggle="modal" data-target="#AddReceiptImages">
+
+													2132132132<i class="fa fa-external-link " aria-hidden="true"></i>
+												</button></td>
+											<td class="hidden-sm hidden-xs">2020-03-05</td>
+											<td class="hidden-sm hidden-xs">大小</td>
+											<td class="hidden-sm hidden-xs">2020-03-05</td>
+
+											<td>-$1234567</td>
+											<td>$20000000</td>
+											<td class="yellow">opened</td>
+										</tr>
+										<tr>
+											<td>HKGP10 1min</td>
+											<td><button id="AddReceiptImagesModal" data-toggle="modal" data-target="#AddReceiptImages">
+
+													2132132132<i class="fa fa-external-link " aria-hidden="true"></i>
+												</button></td>
+											<td class="hidden-sm hidden-xs">2020-03-05</td>
+											<td class="hidden-sm hidden-xs">大小</td>
+											<td class="hidden-sm hidden-xs">2020-03-05</td>
+
+											<td>-$1234567</td>
+											<td>$20000000</td>
+											<td class="yellow">opened</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col-md-12 p-0" style="margin:0px auto;">
+								<div class="page ">
+									<div class="col-12 p-0 d-flex align-items-center justify-content-end">
+										<span class="mr-2" style="color: white;">Page Size</span>
+										<select class="" style="width:80px;">
+											<option value="number:10" selected="selected">10</option>
+											<option value="number:20">20</option>
+											<option value="number:50">50</option>
+											<option value="number:100">100</option>
+										</select>
+										<ul class="page__list">
+											<li>
+											</li>
+											<li type="button" class="active"><a href="">1</a></li>
+											<li type="button"><a href="">2</a></li>
+											<li type="button"><a href="">3</a></li>
+											<li type="button"><a href="">4</a></li>
+											<li><a href=""><i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+										</ul>
+									</div>
+
+								</div>
+							</div>
+						</div>
+				
+						<div class="tab-pane " id="statement" role="tabpanel" aria-labelledby="messages-tab">
+							
+							<div class="dateSearch mt-0">
+								<!-- <h4 class="search_title float-left mr-2 mt-0">搜尋開獎歷史</h4> -->
+								<ul class="align-items-center ">
+									<li class="search_title  mr-2 mt-0">Search</li>
+									<li><input type="date" ng-model="dataSource.searchCondition.dateS"
+											class="ng-pristine ng-untouched ng-valid ng-not-empty"></li>
+									<li>~</li>
+									<li><input type="date" ng-model="dataSource.searchCondition.dateE"
+											class="ng-pristine ng-untouched ng-valid ng-not-empty"></li>
+									<li><button class="circle_btn" ng-click="search()">go</button></li>
+								</ul>
+							</div>
+							<div class="real_table  mb-2">
+								<table class="mt-0">
+									<tbody>
+										<tr>
+											<th>Time</th>
+											<th>Opening Balance</th>
+											<th>Detail</th>
+											<th>Amount</th>
+											<th>Accumulative</th>
+										</tr>
+										<tr>
+											<td>2020-06-18 10:07:00</td>
+											<td>1990180769.0463</td>
+											<td>
+												Angent
+											</td>
+											<td>
+												690.0000
+											</td>
+											<td>1990179769.0463</td>
+										</tr>
+										<tr>
+											<td>2020-06-18 10:07:00</td>
+											<td>1990180769.0463</td>
+											<td>
+												Angent
+											</td>
+											<td>
+												690.0000
+											</td>
+											<td>1990179769.0463</td>
+										</tr>
+										<tr>
+											<td>2020-06-18 10:07:00</td>
+											<td>1990180769.0463</td>
+											<td>
+												Angent
+											</td>
+											<td>
+												690.0000
+											</td>
+											<td>1990179769.0463</td>
+										</tr>
+										<tr>
+											<td>2020-06-18 10:07:00</td>
+											<td>1990180769.0463</td>
+											<td>
+												Angent
+											</td>
+											<td>
+												690.0000
+											</td>
+											<td>1990179769.0463</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="page ">
+								<div class="col-12 p-0 d-flex align-items-center justify-content-end ">
+									<span class="mr-2" style="color: white;">Page Size</span>
+									<select class="" style="width:80px;">
+										<option value="number:10" selected="selected">10</option>
+										<option value="number:20">20</option>
+										<option value="number:50">50</option>
+										<option value="number:100">100</option>
+									</select>
+									<ul class="page__list">
+										<li>
+										</li>
+										<li type="button" class="active"><a href="">1</a></li>
+										<li type="button"><a href="">2</a></li>
+										<li type="button"><a href="">3</a></li>
+										<li type="button"><a href="">4</a></li>
+										<li><a href=""><i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+									</ul>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footerTop"></div>
+  <div id="footer" class="footer">
+    <div class="container">
+      <div class="footer__logo">
+        <img src="content/images/logo.png" alt="">
+      </div>
+        <div class="col-8 offset-2 ">
+         
+            <div class="d-flex just-content-center  flex-wrap  w-full">
+              <ul class="footer_links col-12 p-0 d-flex justify-content-center">
+                <li class=" ">
+                  <a href="https://www.{{$webTitle}}.com/en/terms-of-use" class="" target="_self">Terms of
+                    Use</a>
+              
+                </li>
+                <li class=" ">
+                  <a href="https://www.{{$webTitle}}.com/en/privacy" class="" target="_self">Privacy Policy</a>
+                </li>
+                </ul>
+               
+               
+            </div>
+          
+        </div>
+        <div class="d-flex">
+
+      
+          <div class="copyright col-6">
+            <div class="d-flex flex-wrap justify-content-start">
+              <div class="col-12  order-lg-1 order-2 mt-1 mt-lg-0 p-0 ">
+                <p class=" text-left">Copyright &copy; 2020 | M4Gaming | All Rights Reserved</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 justify-content-end d-flex">
+            <div class="d-flex">
+            <ul class="col-6 p-0 bank_list mt-2">
+              <li><img src="content/images/bank/help.png" alt=""></li>
+              <li><img src="content/images/bank/master.png" alt=""></li>
+              <li><img src="content/images/bank/neteller.png" alt=""></li>
+              <li><img src="content/images/bank/skrill.png" alt=""></li>
+              <li><img src="content/images/bank/visa.png" alt=""></li>
+            </ul>
+            <ul class="col-6 d-flex mt-10 justify-content-center social_icons">
+              <li><a href="https://dfgameplay.com/gjdnjr"
+                  data-src="/en/dafa/content/images/sprite.9a50b6da82dcfc991953cdcda7671618.png" target="_blank">
+                  <i class="fab fa-facebook-square"></i></a></li>
+              <li> <a href="https://twitter.com/{{$webTitle}}"
+                  data-src="/en/dafa/content/images/sprite.9a50b6da82dcfc991953cdcda7671618.png" target="_blank">
+                  <i class="fab fa-twitter-square"></i></a></li>
+              <li>
+                <a href="https://www.youtube.com/user/The{{$webTitle}}Channel"
+                  data-src="/en/dafa/content/images/sprite.9a50b6da82dcfc991953cdcda7671618.png" target="_blank">
+                  <i class="fab fa-youtube-square"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          </div>
+        </div>
+
+    </div>
+  </div>
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+       
+        <div class="modal-header">
+          
+          <ul class="nav nav-tabs">
+            <li class="">
+              <button class="active " data-toggle="tab" data-target="#login">
+                Login</button>
+            </li>
+            <li class="">
+              <button class="" data-toggle="tab" data-target="#register">Register</button>
+            </li>
+          </ul>
+     
+         
+        </div>
+        <div class="modal-body">
+          <div class="tab-content">
+            <div class="tab-pane show active" id="login">
+              <div class="login_form">
+                <form action="login" class="form-inline" method="POST" id="loginForm">
+                  <div class="login">
+                    <div class="form-group pull-right">
+                      <input name="password" id="passtxt" class="form-control" type="password"
+                        placeholder="Password" onclick='return false'>
+                    </div>
+                    <div class="form-group pull-right ">
+                      <input id="usertxt" name="username" id="username" class="form-control" type="text"
+                        placeholder="Username" onclick='return false'>
+                    </div>
+                    <!-- <ul class="login_btns">
+                      <li><button type="submit" >Login</button></li>
+                      <li><button type="button" data-toggle="modal" data-target="#exampleModal">Register</button>
+                      </li>
+                    </ul> -->
+
+                    <!-- login form ends here-->
+                    <div class="d-flex justify-content-between  w-full">
+                      <span class="fp-txt">Ingat saya</span>
+                      <div class="d-flex align-items-center ">
+                        <input class="forgotpass mr-2  login--input" type="checkbox" name="remember"
+                          {{ old('remember') ? 'checked' : '' }}>
+                        <a class="fp-txt" href="{{ url('/forgot-password') }}">Forgot Password?</a>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="tab-pane  fade" id="register">
+              <ul class="d-flex flex-wrap">
+                <li class="col-6">
+    
+                  <label for="lname">First Name</label>
+                  <input type="text" id="lname" name="lname">
+    
+                </li>
+                <li class="col-6">
+    
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lname">
+    
+                </li>
+                <li class="col-12">
+                  <label for="lname">E-mail: </label>
+                  <input type="text" id="lname" name="lname">
+                  <span class="text-red">12121321212131132123</span>
+                </li>
+                <li class="eye col-6">
+                  <label for="lname">手機: </label>
+                  <input type="text" id="lname" name="lname">
+                </li>
+                <li class="eye col-6">
+                  <label for="lname">密碼: </label>
+                  <input type="text" id="lname" name="lname">
+                </li>
+                <li class="eye col-6">
+                  <label for="lname">確認密碼: </label>
+                  <input type="text" id="lname" name="lname">
+                </li>
+                <li class="eye col-6">
+                  <label for="lname">銀行密碼: </label>
+                  <input type="text" id="lname" name="lname">
+                </li>
+                <li class="eye col-6">
+                  <label for="lname">生日: </label>
+                  <input type="text" id="lname" name="lname">
+                </li>
+                <li class="col-12 mt-3">
+                  <label for="lname" class="left">驗證碼: </label>
+                  <input type="text" id="lname" name="lname" style="width:40%"><span class="capcha_area">123445</span>
+                </li>
+              </ul>
+            </div>
+       
+          </div>
+         
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="design_btn" data-dismiss="modal">Close</button>
+          <button type="button" class="theme_btn">submit</button>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+
+	<script src="content/scripts/bootstrap.js"></script>
+	<script src="content/scripts/bootstrap.bundle.js"></script>
+	<script src="content/scripts/owl.carousel.js"></script>
+	<script src="content/scripts/custom.js"></script>
+
+</body>
+
+</html>
