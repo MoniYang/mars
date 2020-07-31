@@ -11,8 +11,7 @@
   vertical-align: middle;
   text-justify: inter-ideograph;
   cursor: pointer;
-  -webkit-user-select: none;
-          user-select: none;
+  user-select: none;
   border-radius: 30px;
   background-image: none;
 }
@@ -553,6 +552,7 @@
 }
 .owl-carousel .owl-stage {
   position: relative;
+  -ms-touch-action: pan-Y;
   touch-action: manipulation;
   -moz-backface-visibility: hidden;
   /* fix firefox animation glitch */
@@ -601,6 +601,9 @@
 .owl-carousel .owl-dot {
   cursor: pointer;
   -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
 .owl-carousel .owl-nav button.owl-prev,
@@ -648,6 +651,8 @@
 .owl-carousel.owl-drag .owl-item {
   touch-action: pan-y;
   -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
 .owl-carousel.owl-grab {
@@ -810,6 +815,8 @@
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
   background: #869791;
 }
+
+/*# sourceMappingURL=custom.css.map */
 html {
   overflow-x: hidden;
 }

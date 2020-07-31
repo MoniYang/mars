@@ -206,7 +206,7 @@ $btn-config:(
   &:active, 
   &:focus, 
   &:hover {
-    background-color: $bg_2;
+    background: $bg_2;
     background-image:none;
     transition: all 0.3s ease;
     color: $text_2;
