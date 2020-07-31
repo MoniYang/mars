@@ -1254,6 +1254,7 @@ input option {
   background-attachment: fixed;
   background-repeat: no-repeat;
   box-shadow: inset 0px 0px 50px 50px #1a1a1a, 5px 5px 5px 50px #1a1a1a;
+  background-image: url("../images/bg.png");
 }
 
 .indexGame {
