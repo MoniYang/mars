@@ -1248,12 +1248,14 @@ input option {
   float: left;
   display: block;
   width: 100%;
-  padding: 30px 0 80px;
+  min-height: 70vh;
+  padding: 30px 0 30px;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
   box-shadow: inset 0px 0px 50px 50px #1a1a1a, 5px 5px 5px 50px #1a1a1a;
+  background-image: url("../images/bg.png");
 }
 
 .indexGame {
@@ -1512,7 +1514,7 @@ li {
 .userBank__item {
   padding: 20px;
   border-radius: 10px;
-  background-image: linear-gradient(-45deg, #ffc796 0%, #e74573 100%);
+  background-image: linear-gradient(120deg, #5cadff 0%, #d57eeb 100%);
   display: flex;
   flex-direction: column;
   position: relative;
@@ -1570,7 +1572,7 @@ li {
 
 .userBank__num {
   font-weight: bold;
-  color: #6f6f6f;
+  color: #fff;
 }
 
 .userBank__name {
@@ -1598,7 +1600,7 @@ li {
   padding: 0 3px !important;
 }
 .userBank__btns li i {
-  color: #6f6f6f;
+  color: #fff;
 }
 
 @media only screen and (max-width: 767px) {
@@ -1633,11 +1635,11 @@ li {
 }
 
 .userInfo--edit {
-  color: #7d6b76;
+  color: #efefef;
   display: flex;
   align-items: center;
   float: right;
-  border-bottom: 1px solid #7d6b76;
+  border-bottom: 1px solid #efefef;
   cursor: pointer;
 }
 
@@ -1714,7 +1716,7 @@ li {
   padding: 8px;
   color: #fff;
   text-align: center;
-  background-color: #a5174f;
+  background-color: #6865c3;
   font-weight: initial;
   text-transform: capitalize;
   border-right: 2px solid rgba(197, 171, 181, 0.17);
@@ -2326,9 +2328,6 @@ li {
   color: #b6f4fb;
 }
 
-.indexInfo {
-  padding: 50px 0;
-}
 @media only screen and (max-width: 991px) {
   .indexInfo {
     padding: 0px;
@@ -2490,7 +2489,6 @@ li {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  padding: 30px 0 0;
 }
 .lobby__area {
   min-height: 45vh;
@@ -2954,7 +2952,6 @@ li {
 }
 .info_tab .nav-tabs button {
   border-image-slice: 1;
-  border-image-source: linear-gradient(to right, rgba(247, 206, 0, 0.96) 25%, #f7d10a 26%, #fcf9a9 42%, #fcf9a8 43%, #f9f490 62%, #f2a900 76%);
   width: 100%;
   background-color: transparent;
   border-radius: 0px;
@@ -2964,7 +2961,6 @@ li {
 .info_tab .nav-tabs button.active {
   color: #3f3f3f;
   font-weight: bold;
-  background-image: linear-gradient(to right, rgba(247, 206, 0, 0.96) 25%, #f7d10a 26%, #fcf9a9 42%, #fcf9a8 43%, #f9f490 62%, #f2a900 76%);
 }
 
 .date_search li {
@@ -3646,10 +3642,11 @@ img {
   padding: 3px 8px;
   border: 1px solid #a18f9d;
   text-shadow: 0px;
-  padding: 3px 15px;
+  padding: 3px 10px;
   border-width: 1px;
   border-radius: 30px;
   text-transform: uppercase;
+  font-size: 14.4px;
   background: transparent;
   background-image: transparent;
   color: #fff;
@@ -3658,7 +3655,7 @@ img {
   color: #efefef;
 }
 .design_btn:active, .design_btn:focus, .design_btn:hover {
-  background-color: #fff;
+  background: #fff;
   background-image: none;
   transition: all 0.3s ease;
   color: #1a1a1a;
@@ -3668,7 +3665,11 @@ img {
 }
 .design_btn i {
   margin: 0 5px;
-  font-size: 15.6px;
+  font-size: 14.4px;
+}
+.design_btn:hover {
+  background-color: transparent !important;
+  background-image: linear-gradient(45deg, #70f4f4 0%, #2aa5d6 0%, #89e0e5 24%, #baf9ff 49%, #3deeff 75%, #2aa5d6 100%, #70f4f4 100%);
 }
 
 .theme_btn {
@@ -3680,7 +3681,7 @@ img {
   color: #1a1a1a;
 }
 .theme_btn:active, .theme_btn:focus, .theme_btn:hover {
-  background-color: #fff;
+  background: #fff;
   background-image: none;
   transition: all 0.3s ease;
   color: #1a1a1a;
