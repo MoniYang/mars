@@ -293,13 +293,8 @@ input {
 	background-size:cover;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-<<<<<<< HEAD
   box-shadow: inset 0px 0px 50px 50px #1a1a1a,5px 5px 5px 50px #1a1a1a;
   background-image: url('../images/bg.png');
-=======
-	box-shadow: inset 0px 0px 50px 50px #1a1a1a,5px 5px 5px 50px #1a1a1a;
-	background-image: url('../images/bg.png');
->>>>>>> 4043cfa75ec05e11e9385c1c5816dce5c05d2adc
 	}
 }
 
@@ -1639,7 +1634,7 @@ li {
           background-color:transparent;
           // transform: scale(0.9);
           padding:0px;
-         
+          border:0px;
           &.active{
             // margin-top:-20px;
             // transform:scale(1.05);

@@ -2502,6 +2502,7 @@ li {
   background-image: none;
   background-color: transparent;
   padding: 0px;
+  border: 0px;
 }
 .lobby__select .nav-tabs li button.active .lobby__gameItem {
   background: linear-gradient(45deg, rgba(105, 183, 206, 0.3) 0%, rgba(43, 136, 217, 0.3) 50%, rgba(105, 183, 206, 0.3) 51%, rgba(125, 185, 232, 0.3) 100%);
