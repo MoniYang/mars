@@ -12,7 +12,12 @@
     });
 
 
-    
+    $('.indexMember__btn').hover(function(){
+        $('.dropmenu').show();
+    })
+    $( ".dropmenu" ).mouseleave(function(){
+        $('.dropmenu').hide();
+    })
 
     $(".login_btn").click(function () {
         if ($(".login_form").hasClass("open")) {
@@ -85,7 +90,7 @@
 
         $('.index_slider.owl-carousel').owlCarousel({
             loop: true,
-            margin: 10,
+            margin: 0,
             nav: false,
             dots:false,
             autoplay:true,

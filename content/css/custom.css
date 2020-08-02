@@ -1095,6 +1095,12 @@ input option {
 .header.fixed .header__img {
   background-image: url(../images/svg/pen_w.svg);
 }
+.header.fixed .indexMember__btn {
+  color: #1a1a1a;
+}
+.header.fixed .indexMember__btn:hover {
+  color: #004e73;
+}
 .header.fixed .logo .logo_b {
   display: block;
   opacity: 1;
@@ -1115,26 +1121,74 @@ input option {
   color: #1a1a1a;
   background-color: #fff;
 }
-.header.fixed .login_btn {
-  color: #1a1a1a;
+
+.indexMember {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.header.fixed .login_btn i {
-  color: #1a1a1a;
+.indexMember__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-.header.fixed .support_language .langText {
-  color: #1a1a1a;
+.indexMember__btn i {
+  margin-bottom: 5px;
 }
-.header.fixed .support_language .langText select {
-  color: #1a1a1a;
+.indexMember__btn p {
+  margin-bottom: 0px;
+  text-transform: uppercase;
 }
-.header.fixed .support_language .langText select option {
-  background-color: #004e73;
-  border: 0px;
-  color: #fff;
+.indexMember__btn:hover {
+  color: #F4CE4B;
+}
+
+.dropmenu {
+  display: none;
+  margin-top: 90px;
+  position: absolute;
+  padding: 20px;
+  width: 200px;
+  margin-left: 50px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-top: 10px solid;
+  border-bottom: 10px solid;
+  border-image-slice: 1;
+  border-width: 1px;
+  margin-bottom: 10px;
+  border-image-source: linear-gradient(to right, rgba(44, 164, 224, 0) 0%, rgba(44, 164, 224, 0.8) 15%, rgba(44, 164, 224, 0.93) 20%, #41ade3 23%, white 50%, #2ca4e0 80%, #2ca4e0 81%, rgba(44, 164, 224, 0.8) 85%, rgba(44, 164, 224, 0) 100%);
+}
+.dropmenu li {
+  margin-bottom: 10px;
+}
+.dropmenu li:last-child {
+  margin-bottom: 0px;
+}
+.dropmenu li i {
+  margin-right: 5px;
+}
+
+.TopMember {
+  display: flex;
+  align-items: center;
+  font-size: 14.4px;
+}
+.TopMember__btn {
+  width: 100%;
+  display: flex;
+  text-align: center;
+}
+.TopMember__btn p {
+  margin-bottom: 0px;
+  text-transform: uppercase;
+}
+.TopMember__btn:hover {
+  color: #F4CE4B;
 }
 
 .fullPageContent {
-  padding: 0 10%;
+  padding: 0 15%;
 }
 @media only screen and (max-width: 1580px) {
   .fullPageContent {
@@ -1209,6 +1263,7 @@ input option {
 .visual {
   float: left;
   width: 400px;
+  left: 5%;
   display: block;
   position: absolute;
   z-index: 100;
@@ -1814,6 +1869,7 @@ li {
   justify-content: center;
   text-align: center;
   float: right;
+  margin-right: 20px;
 }
 .balance i {
   margin: 0 auto;
@@ -1841,8 +1897,6 @@ li {
   color: #fff;
   display: flex;
   align-items: center;
-  flex-direction: column;
-  justify-content: center;
 }
 .support_language .langText select {
   height: auto;
@@ -1869,19 +1923,17 @@ li {
 
 .login {
   display: flex;
-  justify-content: center;
   flex-direction: column;
   width: 100%;
 }
 
 .login_btn {
+  width: 100%;
   border: 0;
   text-shadow: 0 0 0;
   color: #fff;
   display: flex;
-  justify-content: center;
   text-align: center;
-  flex-direction: column;
   align-items: center;
   font-size: 15.6px;
   text-transform: uppercase;
@@ -3498,7 +3550,7 @@ img {
   flex-direction: column;
   background-color: rgba(71, 65, 66, 0.42);
   border-image-slice: 1;
-  border-image-source: linear-gradient(to right, rgba(247, 206, 0, 0.96) 25%, #f7d10a 26%, #fcf9a9 42%, #fcf9a8 43%, #f9f490 62%, #f2a900 76%);
+  border-image-source: linear-gradient(to right, #70f4f4 0%, #2aa5d6 16%, #95eff9 29%, #f4feff 50%, #95eff9 69%, #2aa5d6 85%, #70f4f4 100%);
 }
 @media only screen and (max-width: 1199px) {
   .bonusItem__Inner {
@@ -3527,7 +3579,7 @@ img {
 .bonusItem__num {
   font-size: 48px;
   font-weight: bold;
-  border-right: 1px solid #F4CE4B;
+  border-right: 1px solid #004e73;
   display: block;
   float: left;
   width: 100%;

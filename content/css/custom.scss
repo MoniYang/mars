@@ -114,7 +114,17 @@ input {
 	// background: linear-gradient(to bottom, rgba(200, 23, 93, 0.8) 34%, rgba(200, 23, 93, 0.33) 80%, rgba(200, 23, 93, 0) 100%);
     .header__img{
       background-image: url(../images/svg/pen_w.svg);
-    }
+	}
+	.indexMember{
+		&__btn{
+			color:$black;
+			&:hover{
+				color:$theme;
+			}
+		}
+		
+	
+	}
     .logo {
       .logo_b{
         display: block;
@@ -138,36 +148,106 @@ input {
     }
     .balance{
       color:$black;
-      // background-color:$black;
+
       span{
         color:$black;
         background-color:$white;
       }
     
     }
-    .login_btn{
-      color:$black;
-      i{
-        color:$black;
-      }
-    }
-    .support_language .langText{
-      color:$black;
-      select{
-        color:$black;
-        option{
-          background-color:$theme;
-          border:0px;
-          color:$white;
-        }
-      }
-    }
+    // .login_btn{
+    //   color:$black;
+    //   i{
+    //     color:$black;
+    //   }
+    // }
+    // .support_language .langText{
+    //   color:$black;
+    //   select{
+    //     color:$black;
+    //     option{
+    //       background-color:$theme;
+    //       border:0px;
+    //       color:$white;
+    //     }
+    //   }
+    // }
   }
 	
 }
+.indexMember{
+	// display: none;
+	display: flex ;
+	align-items: center;
+	justify-content: center;
+	&__btn{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		i{
+			margin-bottom:5px;
+		}
+		p{
+			margin-bottom:0px;
+			text-transform: uppercase;
+		}
+		&:hover{
+			color:$yellow;
+		}
+	}
+	// &:hover + .dropmenu{
+	// 	display: flex;
+	// }
+}
+.dropmenu{
+	display: none;
+	margin-top:90px;
+	position: absolute;
+	padding:20px;
+	width:200px;
+	margin-left:50px;
+	// background-color: rgba(0, 78, 115, 0.9);
+	background-color:rgba(0,0,0,0.6);
+	// background-color: rgba(0, 78, 115, 0.8);
+    border-top: 10px solid;
+    border-bottom: 10px solid;
+    border-image-slice: 1;
+    border-width: 1px;
+    margin-bottom: 10px;
+    border-image-source: linear-gradient(to right, rgba(44, 164, 224, 0) 0%, rgba(44, 164, 224, 0.8) 15%, rgba(44, 164, 224, 0.93) 20%, #41ade3 23%, white 50%, #2ca4e0 80%, #2ca4e0 81%, rgba(44, 164, 224, 0.8) 85%, rgba(44, 164, 224, 0) 100%);
+	li{
+		margin-bottom:10px;
+		&:last-child{
+			margin-bottom:0px;
+		}
+			
+		i{
+			margin-right:5px;
+		}
+	}
+}
+.TopMember{
+	display: flex;
+	align-items: center;
+	font-size:font(1.2);
 
+	&__btn{
+		width: 100%;
+		display: flex;
+		text-align: center;
+		// justify-content:center;
+		p{
+			margin-bottom:0px;
+			text-transform: uppercase;
+		}
+		&:hover{
+			color:$yellow;
+		}
+	}
+}
 .fullPageContent{
-  padding:0 10%;
+  padding:0 15%;
   @include rwdw(1580){
 		padding:0 5%;
 	}
@@ -241,6 +321,7 @@ input {
 .visual{
 	float: left;
 	width: 400px;
+	left:5%;
     // height: 630px;
     display: block;
     position: absolute;
@@ -854,6 +935,7 @@ li {
     justify-content: center;
     text-align: center;
 	float:right;
+	margin-right:20px;
 	// background-color:$white;
 	i{
 		// height:30px;
@@ -892,8 +974,8 @@ li {
 			color: #fff;
 			display: flex;
 			align-items: center;
-			flex-direction: column;
-			justify-content: center;
+			// flex-direction: column;
+			// justify-content: center;
 			select{
 				height:auto;
 				padding:2px 0;
@@ -923,20 +1005,21 @@ li {
 }
 .login{
 	display: flex;
-	justify-content: center;
+	// justify-content: center;
 	flex-direction: column;
 	width:100%;
 }
 .login_btn {
 	// background-color: transparent;
+	width:100%;
 	border: 0;
 	text-shadow: 0 0 0;
 	color: #fff;
 	//margin-right: 15px;
 	display: flex;
-	justify-content: center;
+	// justify-content: center;
 	text-align: center;
-	flex-direction: column;
+	// flex-direction: column;
 	align-items:center;
 	font-size: 15.6px;
 	text-transform: uppercase;
@@ -2724,7 +2807,7 @@ img {
     flex-direction: column;
     background-color:rgba(71, 65, 66, 0.42);
     border-image-slice: 1;
-      border-image-source: linear-gradient(to right, rgba(247, 206, 0, 0.96) 25%, #f7d10a 26%, #fcf9a9 42%, #fcf9a8 43%, #f9f490 62%, #f2a900 76%);
+      border-image-source: linear-gradient(to right, #70f4f4 0%, #2aa5d6 16%, #95eff9 29%, #f4feff 50%, #95eff9 69%, #2aa5d6 85%, #70f4f4 100%);
 		@include rwdw(1199){
 			padding:20px;
 		}
@@ -2747,7 +2830,7 @@ img {
 	&__num{
 		font-size:font(4);
 		font-weight: bold;
-		border-right:1px solid $yellow;
+		border-right:1px solid $theme;
 		display: block;
 		float: left;
 		width: 100%;
