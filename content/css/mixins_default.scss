@@ -76,7 +76,7 @@ $baseSize: 12px;
 
 @mixin border-style{
     border-image-slice: 1;
-    border-image-source: linear-gradient(to right,  rgba(247, 206, 0, 0.96) 25%, #f7d10a 26%, #fcf9a9 42%, #fcf9a8 43%, #f9f490 62%, #f2a900 76%) ;
+    border-image-source: linear-gradient(to right, rgba(112,244,244,1) 0%,rgba(42,165,214,1) 16%,rgba(149,239,249,1) 29%,rgba(244,254,255,1) 50%,rgba(149,239,249,1) 69%,rgba(42,165,214,1) 85%,rgba(112,244,244,1) 100%);
 }
 
 @mixin textGradient ($color1, $color2) {

@@ -46,14 +46,15 @@
    
   
     $('.mobileNav__btn').click(function(){
-        $('.navbar').addClass('open');
-        $('.navbar').removeClass('close');
+        $('.mobileNav').addClass('open');
+        $('.mobileNav__btn').addClass('mobileNav--Closebtn');
+        $('.mobileNav').removeClass('close');
 
     });
 
     $('.mobileNav--Closebtn').click(function(){
-        $('.navbar').addClass('close');
-        $('.navbar').removeClass('open');
+        $('.mobileNav').addClass('close');
+        $('.mobileNav').removeClass('open');
 
     });
     $('.transbox--btnClick').click(function(){
