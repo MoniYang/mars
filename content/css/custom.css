@@ -1057,13 +1057,16 @@ input option {
 .header .index_logo {
   display: none !important;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .header .index_logo {
     display: block !important;
   }
+  .header .index_logo.logo_b {
+    display: none !important;
+  }
 }
 .header .logo_w {
-  display: none;
+  display: block;
 }
 @media only screen and (max-width: 767px) {
   .header .logo_w {
@@ -1071,7 +1074,7 @@ input option {
   }
 }
 .header .logo_b {
-  display: block;
+  display: none;
   opacity: 1;
 }
 .header img {
@@ -1081,26 +1084,15 @@ input option {
 .header__img {
   width: 100%;
   position: absolute;
-  margin-top: -50px;
   z-index: -2;
   float: left;
-  height: 100px;
+  height: 40px;
   background-size: cover;
   background-position: bottom;
 }
-@media only screen and (max-width: 1199px) {
-  .header__img {
-    margin-top: -70px;
-  }
-}
 @media only screen and (max-width: 991px) {
   .header__img {
-    margin-top: -70px;
-  }
-}
-@media only screen and (max-width: 667px) {
-  .header__img {
-    margin-top: -65px;
+    margin-top: -20px;
   }
 }
 .header__img img {
@@ -1177,13 +1169,18 @@ input option {
   margin-bottom: 0px;
   text-transform: uppercase;
 }
+@media only screen and (max-width: 480px) {
+  .indexMember__btn p {
+    font-size: 12px;
+  }
+}
 .indexMember__btn:hover {
   color: #F4CE4B;
 }
 
 .dropmenu {
   display: none;
-  margin-top: 230px;
+  margin-top: 200px;
   position: absolute;
   padding: 20px;
   width: 200px;
@@ -1210,11 +1207,29 @@ input option {
 .dropmenu li i {
   margin-right: 5px;
 }
+.dropmenu__login {
+  display: flex;
+  color: #fff;
+  width: 100%;
+  text-transform: uppercase;
+}
+.dropmenu__login ul {
+  display: flex;
+  flex-direction: row;
+}
+.dropmenu__login ul li {
+  margin-bottom: 0px;
+}
 
 .TopMember {
   display: flex;
   align-items: center;
   font-size: 15.6px;
+}
+@media only screen and (max-width: 991px) {
+  .TopMember {
+    font-size: 14.4px;
+  }
 }
 .TopMember__btn {
   width: 100%;
@@ -1324,6 +1339,7 @@ input option {
     display: flex;
     align-items: center;
     opacity: 0.5;
+    top: 50px;
   }
 }
 .visual__img img {
@@ -1334,39 +1350,51 @@ input option {
 }
 
 .dark_bg {
-  position: relative;
-  top: -50px;
-  z-index: 10;
+  position: absolute;
+  margin-top: -50px;
+  z-index: 7;
   float: left;
+  height: 50px;
+  background-size: cover;
   width: 100%;
-}
-@media only screen and (max-width: 991px) {
-  .dark_bg {
-    top: -20px;
-  }
+  background-image: url("../images/svg/pen_dark.svg");
 }
 @media only screen and (max-width: 767px) {
   .dark_bg {
-    top: -25px;
-  }
-}
-@media only screen and (max-width: 575px) {
-  .dark_bg {
-    top: -10px;
+    height: 100px;
   }
 }
 
 .wrapper {
-  margin-top: 60px;
+  margin-top: 120px;
   float: left;
   width: 100%;
+  min-height: 750px;
+}
+@media only screen and (max-width: 1024px) {
+  .wrapper {
+    min-height: 80vh;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .wrapper {
+    margin-top: 80px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .wrapper {
+    margin-top: 80px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .wrapper {
+    margin-top: 60px;
+  }
 }
 .wrapper__inner {
   float: left;
   display: block;
   width: 100%;
-  min-height: 60vh;
-  padding: 30px 0 0px;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -1374,9 +1402,9 @@ input option {
   box-shadow: inset 0px 0px 50px 50px #1a1a1a, 5px 5px 5px 50px #1a1a1a;
   background-image: url("../images/bg.png");
 }
-
 .indexGame {
   background-size: cover;
+  margin-top: 0px;
   background-position: center;
 }
 .indexGame .title {
@@ -1384,21 +1412,21 @@ input option {
   margin-bottom: 50px;
   z-index: 10;
   position: relative;
-  margin-top: -12%;
+  margin-top: 0%;
 }
 @media only screen and (max-width: 1280px) {
   .indexGame .title {
-    margin-top: -10%;
+    margin-top: 0%;
   }
 }
 @media only screen and (max-width: 991px) {
   .indexGame .title {
-    margin-top: -8%;
+    margin-top: -3%;
   }
 }
 @media only screen and (max-width: 480px) {
   .indexGame .title {
-    margin-top: -12%;
+    margin-top: -5%;
   }
 }
 .indexGame .title span {
@@ -1430,7 +1458,12 @@ input option {
   display: flex;
   justify-content: center;
   padding: 0 0%;
-  margin-top: 50px;
+  margin: 60px 0 30px;
+}
+@media only screen and (max-width: 480px) {
+  .indexGame ul {
+    margin: 30px 0 10px;
+  }
 }
 .indexGame ul li {
   padding: 0 10px;
@@ -1452,6 +1485,12 @@ input option {
   margin-left: 20px;
   animation: gameAni_Alt 5s infinite;
   animation-direction: alternate;
+}
+@media only screen and (max-width: 480px) {
+  .indexGame ul li:nth-child(2) {
+    margin-top: -40px;
+    margin-left: 10px;
+  }
 }
 .indexGame ul li:last-child {
   animation: gameAni 3s infinite;
@@ -1567,7 +1606,7 @@ li {
 }
 
 .circle_btn {
-  background: linear-gradient(135deg, rgba(247, 206, 0, 0.96) 25%, #f7d10a 26%, #fcf9a8 43%, #f9f490 62%, #ffc800 76%);
+  background: linear-gradient(45deg, #70f4f4 0%, #2aa5d6 0%, #89e0e5 24%, #baf9ff 49%, #3deeff 75%, #2aa5d6 100%, #70f4f4 100%);
   color: #1a1a1a;
   width: 30px;
   height: 30px;
@@ -1877,9 +1916,13 @@ li {
 }
 .modal-content .nav-tabs {
   border-bottom: 0px;
+  flex-direction: row;
 }
 .modal-content .nav-tabs li {
   width: 50%;
+}
+.modal-content .nav-tabs li button {
+  font-size: 14.4px;
 }
 .modal-content .close {
   position: absolute;
@@ -1951,6 +1994,11 @@ li {
     font-size: 18px;
   }
 }
+@media only screen and (max-width: 480px) {
+  .balance i {
+    font-size: 14.4px;
+  }
+}
 .balance span {
   color: #fff;
 }
@@ -1993,9 +2041,11 @@ li {
 
 .login {
   display: flex;
+  flex-direction: column;
   color: #fff;
   width: 100%;
   text-transform: uppercase;
+  font-size: 13.2px;
 }
 .login ul {
   display: flex;
@@ -2016,6 +2066,11 @@ li {
   font-size: 15.6px;
   text-transform: uppercase;
 }
+@media only screen and (max-width: 991px) {
+  .login_btn {
+    font-size: 13.2px;
+  }
+}
 .login_btn i {
   color: #fff;
 }
@@ -2025,10 +2080,6 @@ li {
 }
 .login_btn:hover i {
   color: #F4CE4B;
-}
-
-.login_form {
-  display: none;
 }
 
 .login_form.open {
@@ -2042,6 +2093,16 @@ li {
   background-color: #1a1a1a;
 }
 @media only screen and (max-width: 767px) {
+  .index_slider.owl-carousel {
+    margin-top: -120px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .index_slider.owl-carousel {
+    margin-top: -80px;
+  }
+}
+@media only screen and (max-width: 480px) {
   .index_slider.owl-carousel {
     margin-top: -60px;
   }
@@ -2252,7 +2313,7 @@ li {
   border-image-slice: 1;
   border-radius: 100%;
   border-width: 5px;
-  background: linear-gradient(30deg, rgba(247, 206, 0, 0.73) 26%, #fcf9a9 41%, #fffcdb 44%, #f9f490 62%, #f2a90054 87%, #f2a900e0 88%, #fcf649b5 100%);
+  background: linear-gradient(45deg, #70f4f4 0%, #2aa5d6 16%, #95eff9 29%, #f4feff 50%, #95eff9 69%, #2aa5d6 85%, #70f4f4 100%);
 }
 
 .mobileNav--member {
@@ -2320,6 +2381,7 @@ li {
   width: 100% !important;
   border: 0px;
   margin-bottom: 10px;
+  font-size: 14.4px;
 }
 .form-control:hover {
   outline: none;
@@ -2366,12 +2428,17 @@ li {
   position: fixed;
   height: 100vh;
   top: 40%;
-  z-index: 100;
+  z-index: 99;
 }
 .livechat .box {
   left: -180px;
   position: absolute;
   width: 160px;
+}
+@media only screen and (max-width: 480px) {
+  .livechat .box {
+    width: 110px;
+  }
 }
 .livechat .box .toptobottom {
   color: #1a1a1a;
@@ -2386,10 +2453,17 @@ li {
 .livechat .box ul {
   float: left;
   padding: 20px;
+  width: 100%;
   border: 10px solid;
   border-image-slice: 1;
   border-width: 1px;
-  border-image-source: linear-gradient(to right, #fefcea 0%, #fefcea 0%, #f7ce00 26%, #fcf9a9 41%, #fffcdb 44%, #f9f490 62%, #f2a900 87%, #f2a900 87%, #f2a900 88%, #fcf649 100%);
+  border-image-source: linear-gradient(to right, #5f9fd3 0%, #1e5799 20%, #2aa5d6 36%, #a5dcf7 50%, #2aa5d6 70%, #1e5799 81%, #6ba4d3 100%);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+@media only screen and (max-width: 480px) {
+  .livechat .box ul {
+    margin-top: 30px;
+  }
 }
 .livechat .box.open {
   animation: livechat_open 0.3s 1;
@@ -2400,8 +2474,17 @@ li {
   padding: 8px 0;
   line-height: 1;
 }
+@media only screen and (max-width: 480px) {
+  .livechat li {
+    padding: 3px 0;
+  }
+}
+.livechat li:hover a {
+  color: #F4CE4B;
+  transition: all 0.3s ease-in-out;
+}
 .livechat li a {
-  color: #fbe887;
+  color: #67f1ff;
 }
 .livechat li p {
   margin-bottom: 0px;
@@ -2414,12 +2497,12 @@ li {
 .livechat--btn {
   position: fixed;
   left: -80px;
-  margin-top: 115px;
+  margin-top: 90px;
   z-index: 100000;
 }
 
 .livechat--btn.open {
-  left: 97px;
+  left: 100px;
   animation: livechat_btn_open 0.3s 1;
 }
 
@@ -2432,7 +2515,7 @@ li {
   padding: 3px;
   font-weight: bold;
   transform: rotate(90deg);
-  background: linear-gradient(to right, #fceabb 0%, #fccd4d 50%, #f8b500 51%, #fbdf93 100%);
+  background: linear-gradient(45deg, #70f4f4 0%, #2aa5d6 0%, #89e0e5 24%, #baf9ff 49%, #3deeff 75%, #2aa5d6 100%, #70f4f4 100%);
 }
 .livechat--contact p {
   margin-bottom: 0px;
@@ -2469,6 +2552,11 @@ li {
   background-color: #1a7099;
   color: #ddd;
   border: 1px solid #2986b3;
+}
+@media only screen and (max-width: 480px) {
+  .nav-tabs li button {
+    padding: 3px 0px;
+  }
 }
 .nav-tabs li button.active {
   color: #004e73;
@@ -2700,12 +2788,28 @@ li {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 50px;
+  margin: 0px 0 20px;
+}
+@media only screen and (max-width: 991px) {
+  .lobby {
+    margin: 0 0 30px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .lobby {
+    margin: 0px 0;
+  }
 }
 .lobby__area {
-  min-height: 50vh;
-  max-height: 50vh;
+  min-height: 60vh;
+  max-height: 60vh;
   overflow-y: auto;
+}
+.lobby__area::-webkit-scrollbar {
+  width: 0px;
+}
+.lobby__select {
+  width: 100%;
 }
 .lobby__select .nav-tabs {
   display: flex;
@@ -2737,19 +2841,33 @@ li {
 .lobby__quickStart {
   display: flex;
   align-items: baseline;
+  width: 33.3%;
+}
+@media only screen and (max-width: 991px) {
+  .lobby__quickStart {
+    align-items: center;
+    width: 35%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .lobby__quickStart {
+    align-items: center;
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .lobby__quickStart {
+    align-items: center;
+    width: 35%;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .lobby__quickStart {
+    width: 32%;
+  }
 }
 .lobby__quickStart:before {
   content: "";
-  display: block;
-  height: 80px;
-  width: 90%;
-  border-image-slice: 1;
-  padding: 5px;
-  margin-top: 30px;
-  position: absolute;
-  border: 1px solid;
-  border-image-slice: 1;
-  border-image-source: linear-gradient(120deg, rgba(234, 50, 50, 0.8) 0%, rgba(213, 126, 235, 0.8) 100%);
 }
 .lobby__quickStart p {
   font-size: 21.6px;
@@ -2757,8 +2875,11 @@ li {
   line-height: 1.1;
   text-transform: uppercase;
   margin-bottom: 0px;
+  margin-left: 80px;
+  padding: 0px 0px;
   text-align: left;
   color: transparent;
+  position: relative;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: cover;
@@ -2767,11 +2888,89 @@ li {
   animation: textGradient 1s linear infinite;
   animation-direction: alternate;
 }
+@media only screen and (max-width: 1199px) {
+  .lobby__quickStart p {
+    top: 0px;
+    padding: 0 20px;
+    margin-left: 60px;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .lobby__quickStart p {
+    position: relative;
+    padding: 0;
+    font-size: 16.8px;
+    margin-left: 80px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .lobby__quickStart p {
+    padding: 0 0px;
+    margin-left: 70px;
+    font-size: 14.4px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .lobby__quickStart p {
+    font-size: 12px;
+    margin-left: 50px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .lobby__quickStart p {
+    margin-left: 40px;
+  }
+}
 .lobby__quickStart p span {
   color: #F4CE4B;
 }
 .lobby__quickImg {
-  width: 100%;
+  margin-top: -60px;
+  position: absolute;
+  left: 0px;
+  padding-right: 10px;
+}
+@media only screen and (max-width: 991px) {
+  .lobby__quickImg {
+    margin-top: -45px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .lobby__quickImg {
+    margin-top: -30px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .lobby__quickImg {
+    margin-top: -20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .lobby__quickImg {
+    max-width: 20%;
+    justify-content: center;
+  }
+}
+.lobby__quickImg img {
+  max-width: 90px;
+  position: relative;
+  z-index: 1;
+}
+@media only screen and (max-width: 1199px) {
+  .lobby__quickImg img {
+    max-width: 90px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .lobby__quickImg img {
+    max-width: 70px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .lobby__quickImg img {
+    max-width: 50px;
+  }
 }
 .lobby__userText {
   padding-left: 0px;
@@ -2806,8 +3005,15 @@ li {
 .lobby__gameItem {
   margin-bottom: 3px;
 }
+.lobby__gameTableInner {
+  display: flex;
+}
 .lobby__gameItemInner {
   padding: 5px 15px;
+}
+.lobby__gameItemInner img {
+  max-height: 60px;
+  width: auto !important;
 }
 .lobby__list li {
   width: 50%;
@@ -2818,60 +3024,68 @@ li {
     width: 100%;
   }
 }
-.lobby__gametable {
+.lobby__gametablebox {
   border: 10px solid;
   border-image-slice: 1;
   padding: 5px;
   border-width: 1px;
   border-image-source: linear-gradient(to right, #5f9fd3 0%, #1e5799 20%, #2aa5d6 36%, #a5dcf7 50%, #2aa5d6 70%, #1e5799 81%, #6ba4d3 100%);
 }
-.lobby__gametable.active, .lobby__gametable:hover {
+@media only screen and (max-width: 480px) {
+  .lobby__gametablebox {
+    padding: 3px;
+  }
+}
+.lobby__gametablebox.active, .lobby__gametablebox:hover {
   transition: all 0.3s ease-in-out;
   background-image: linear-gradient(120deg, rgba(157, 101, 246, 0.3) 0%, rgba(179, 0, 181, 0.8) 100%);
   border-image-source: linear-gradient(120deg, rgba(157, 101, 246, 0.3) 0%, rgba(179, 0, 181, 0.8) 100%);
 }
-.lobby__gametable.active .lobby__gameTable, .lobby__gametable:hover .lobby__gameTable {
-  background-image: linear-gradient(120deg, rgba(157, 101, 246, 0.3) 0%, rgba(179, 0, 181, 0.8) 100%);
-}
-.lobby__gametable.active .lobby__gameInfo, .lobby__gametable:hover .lobby__gameInfo {
+.lobby__gametablebox.active .lobby__gameTable, .lobby__gametablebox:hover .lobby__gameTable {
   background-color: transparent;
 }
-.lobby__gametable.active .lobby__gameTableButton, .lobby__gametable:hover .lobby__gameTableButton {
+.lobby__gametablebox.active .lobby__gameTable ul, .lobby__gametablebox:hover .lobby__gameTable ul {
+  background-image: linear-gradient(120deg, rgba(157, 101, 246, 0.3) 0%, rgba(179, 0, 181, 0.8) 100%);
+}
+.lobby__gametablebox.active .lobby__gameInfo, .lobby__gametablebox:hover .lobby__gameInfo {
+  background-color: transparent;
+}
+.lobby__gametablebox.active .lobby__gameTableButton, .lobby__gametablebox:hover .lobby__gameTableButton {
   background-image: linear-gradient(45deg, #cb60b3 0%, #c146a1 50%, #a80077 51%, #db36a4 100%);
 }
-.lobby__gametable.hot_active {
+.lobby__gametablebox.hot_active {
   border-image-source: linear-gradient(120deg, rgba(234, 50, 50, 0.8) 0%, rgba(213, 126, 235, 0.8) 100%);
   background-image: linear-gradient(120deg, rgba(234, 50, 50, 0.5) 0%, rgba(213, 126, 235, 0.5) 100%);
 }
-.lobby__gametable.hot_active .lobby__gameTable {
+.lobby__gametablebox.hot_active .lobby__gameTable {
   background: linear-gradient(45deg, rgba(254, 204, 177, 0.1) 0%, rgba(241, 116, 50, 0.1) 50%, rgba(234, 85, 7, 0.1) 51%, rgba(251, 149, 94, 0.1) 100%);
 }
-.lobby__gametable.hot_active .lobby__gameTableButton {
+.lobby__gametablebox.hot_active .lobby__gameTableButton {
   background: linear-gradient(45deg, #feccb1 0%, #f17432 50%, #ea5507 51%, #fb955e 100%);
   background-color: transparent;
 }
-.lobby__gametable li {
+.lobby__gametablebox li {
   border-right: 1px solid #004e73;
   text-align: center;
   padding: 5px 5px 5px !important;
   margin-bottom: 0px;
 }
 @media only screen and (max-width: 480px) {
-  .lobby__gametable li {
-    padding: 3px !important;
+  .lobby__gametablebox li {
+    padding: 0px !important;
     font-size: 12px;
   }
 }
-.lobby__gametable li:first-child {
+.lobby__gametablebox li:first-child {
   padding-left: 0px;
 }
-.lobby__gametable li:last-child {
+.lobby__gametablebox li:last-child {
   border-right: 0px;
 }
-.lobby__gametable li:nth-child(odd) {
+.lobby__gametablebox li:nth-child(odd) {
   padding-left: 5x;
 }
-.lobby__gametable li:nth-child(even) {
+.lobby__gametablebox li:nth-child(even) {
   padding-right: 5x;
 }
 .lobby__gameTableButton {
@@ -2882,7 +3096,7 @@ li {
 }
 @media only screen and (max-width: 1199px) {
   .lobby__gameTableButton {
-    width: 80px;
+    width: 60px;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -2898,7 +3112,7 @@ li {
 }
 @media only screen and (max-width: 1199px) {
   .lobby__gameTableButton p {
-    font-size: 14.4px;
+    font-size: 12px;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -2911,38 +3125,59 @@ li {
   width: 20%;
 }
 .lobby__gameInfo {
-  width: 30%;
+  width: 100%;
   padding: 5px;
   display: flex;
   flex-direction: column;
+  width: 50%;
 }
 @media only screen and (max-width: 1199px) {
   .lobby__gameInfo {
-    width: 35%;
+    width: 55%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .lobby__gameInfo {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 .lobby__gameTitle {
   float: left;
+  width: 100%;
   color: #fff;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
   padding: 0 0px;
-  font-size: 15.6px;
+  font-size: 13.2px;
   margin-bottom: 0px;
 }
 @media only screen and (max-width: 1199px) {
   .lobby__gameTitle {
-    font-size: 14.4px;
+    font-size: 13.2px;
   }
 }
 @media only screen and (max-width: 480px) {
   .lobby__gameTitle {
     font-size: 13.2px;
+    width: 60%;
   }
 }
 .lobby__gameTable {
+  width: 100%;
+  display: flex;
   background-color: rgba(0, 78, 115, 0.3);
+}
+@media only screen and (max-width: 480px) {
+  .lobby__gameTable {
+    flex-direction: column;
+  }
 }
 .lobby__gameTable ul {
   display: flex;
+  width: 100%;
 }
 .lobby__gameTable ul li {
   color: #fff;
@@ -2957,17 +3192,18 @@ li {
 }
 .lobby__gamePeople {
   color: #fff;
-  display: flex;
   border: 1px solid #aaa;
   border-radius: 50px;
   padding-right: 10px;
   display: flex;
   align-items: center;
+  width: 100%;
   letter-spacing: 1px;
 }
 @media only screen and (max-width: 480px) {
   .lobby__gamePeople {
     font-size: 12px;
+    width: 30%;
   }
 }
 .lobby__gamePeople i {
@@ -2990,6 +3226,7 @@ li {
 .lobby__gameboard {
   border: 2px solid;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   border-right: 0px;
   border-left: 0px;
@@ -3000,15 +3237,77 @@ li {
   background-color: rgba(0, 78, 115, 0.3);
   border-image-source: linear-gradient(to right, #5f9fd3 0%, #1e5799 20%, #2aa5d6 36%, #a5dcf7 50%, #2aa5d6 70%, #1e5799 81%, #6ba4d3 100%);
 }
+@media only screen and (max-width: 767px) {
+  .lobby__gameboard {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .lobby__gameboard {
+    padding: 5px 0px;
+  }
+}
 .lobby__gameboard ul {
+  width: 40%;
   display: flex;
-  padding: 0 10px;
+  padding: 0 0px;
+  justify-content: flex-end;
+}
+@media only screen and (max-width: 991px) {
+  .lobby__gameboard ul {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .lobby__gameboard ul {
+    width: 100%;
+    justify-content: center;
+  }
 }
 .lobby__gameboard ul li {
   margin-right: 10px;
 }
+@media only screen and (max-width: 1199px) {
+  .lobby__gameboard ul li {
+    margin-right: 5px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .lobby__gameboard ul li {
+    margin-right: 3px;
+  }
+}
+.lobby__gameboard ul li button {
+  color: #aaa;
+}
+@media only screen and (max-width: 1199px) {
+  .lobby__gameboard ul li button {
+    font-size: 13.2px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .lobby__gameboard ul li button {
+    font-size: 12px;
+  }
+}
 .lobby__gameboard ul li i {
   margin-right: 5px;
+  color: #75b8de;
+}
+@media only screen and (max-width: 991px) {
+  .lobby__gameboard ul li i {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .lobby__gameboard ul li i {
+    width: auto;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .lobby__gameboard ul li i {
+    margin-right: 3px;
+  }
 }
 .lobby__gameboard ul li:hover button {
   color: #F4CE4B;
@@ -3017,6 +3316,36 @@ li {
 .lobby__gameboard ul li:active i {
   animation: rotate360 0.3s infinite;
 }
+.lobby__gameboardInner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 991px) {
+  .lobby__gameboardInner {
+    width: 65%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .lobby__gameboardInner {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .lobby__gameboardInner {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .lobby__gameboardInner {
+    width: 65%;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .lobby__gameboardInner {
+    width: 68%;
+  }
+}
 .lobby__gameHot {
   background-color: #FF4136;
   color: #fff;
@@ -3024,7 +3353,8 @@ li {
   font-size: 12px;
   margin-bottom: 0px;
   margin-top: -20px;
-  margin-left: -20px;
+  margin-left: -10px;
+  width: 45px;
   transform: rotate(-20deg);
 }
 .lobby__gameHot i {
@@ -3037,19 +3367,49 @@ li {
   animation-direction: alternate;
 }
 .lobby__gameTopic {
+  width: 70%;
   font-size: 18px;
   margin-bottom: 0px;
   text-transform: uppercase;
   line-height: 1.5;
+  text-align: center;
+}
+@media only screen and (max-width: 991px) {
+  .lobby__gameTopic {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .lobby__gameTopic {
+    width: 100%;
+    font-size: 15.6px;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .lobby__gameTopic {
+    font-size: 13.2px;
+  }
 }
 
 .quick__choice ul {
   display: flex;
 }
+@media only screen and (max-width: 991px) {
+  .quick__choice ul {
+    flex-wrap: wrap;
+  }
+}
 .quick__choice ul li {
   width: 25%;
   padding: 0px 10px 30px !important;
   cursor: pointer;
+}
+@media only screen and (max-width: 991px) {
+  .quick__choice ul li {
+    width: 50%;
+    padding: 0 5px 10px !important;
+  }
 }
 .quick__item {
   border-radius: 10px;
@@ -3076,7 +3436,8 @@ li {
   padding-top: 30px;
   position: relative;
   z-index: 1;
-  max-width: 200px;
+  max-width: 180px;
+  width: 100%;
 }
 .quick__item:before {
   content: "";
@@ -3097,6 +3458,11 @@ li {
   position: relative;
   z-index: 1;
 }
+@media only screen and (max-width: 767px) {
+  .quick__smallTile {
+    font-size: 13.2px;
+  }
+}
 .quick__text {
   font-weight: bold;
   position: relative;
@@ -3106,6 +3472,9 @@ li {
 
 .trans_box {
   padding: 20px 0;
+}
+.trans_box p {
+  font-size: 13.2px;
 }
 .trans_box ul li {
   padding: 5px 0;
@@ -3227,6 +3596,9 @@ li {
   flex-direction: row;
   margin-bottom: 0;
 }
+.info_tab .nav-tabs li {
+  width: 50%;
+}
 .info_tab .nav-tabs .nav-item {
   padding: 0px;
 }
@@ -3319,6 +3691,11 @@ li {
 .footer__logo img {
   max-width: 120px;
   margin: 0 auto;
+}
+@media only screen and (max-width: 768px) {
+  .footer__logo img {
+    max-width: 80px;
+  }
 }
 
 .social_icons li {
@@ -3647,15 +4024,17 @@ img {
 .proBanner {
   height: 400px;
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
   position: absolute;
   top: 0px;
   padding-top: 100px;
   width: 100%;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 576px) {
   .proBanner {
     padding-top: 90px;
+    height: 250px;
   }
 }
 .proBanner__title {
@@ -3664,21 +4043,23 @@ img {
 }
 
 .proContent {
-  margin-top: 250px;
+  margin-top: 300px;
+  padding-bottom: 50px;
+}
+@media only screen and (max-width: 1199px) {
+  .proContent {
+    padding-bottom: 30px;
+  }
 }
 @media only screen and (max-width: 991px) {
   .proContent {
-    margin-top: 170px;
+    margin-top: 120px;
+    padding-bottom: 10px;
   }
 }
 @media only screen and (max-width: 576px) {
   .proContent {
-    margin-top: 120px;
-  }
-}
-@media only screen and (max-width: 489px) {
-  .proContent {
-    margin-top: 100px;
+    margin-top: 60px;
   }
 }
 .proContent__Text {
@@ -3720,10 +4101,15 @@ img {
     font-size: 30px;
   }
 }
+@media only screen and (max-width: 767px) {
+  .bonus__title {
+    font-size: 21.6px;
+  }
+}
 @media only screen and (max-width: 480px) {
   .bonus__title {
     margin: 0px;
-    font-size: 21.6px;
+    font-size: 18px;
   }
 }
 .bonus__Inner ul {
@@ -3949,6 +4335,11 @@ img {
   margin: 0 5px;
   font-size: 14.4px;
 }
+@media only screen and (max-width: 480px) {
+  .design_btn i {
+    margin: 0 2px;
+  }
+}
 .design_btn:hover {
   background-color: transparent !important;
   background-image: linear-gradient(45deg, #70f4f4 0%, #2aa5d6 0%, #89e0e5 24%, #baf9ff 49%, #3deeff 75%, #2aa5d6 100%, #70f4f4 100%);
@@ -3973,6 +4364,14 @@ img {
 }
 
 @media only screen and (max-width: 480px) {
+  @keyframes livechat_btn_open {
+    from {
+      left: 0px;
+    }
+    to {
+      left: 65px;
+    }
+  }
   .title {
     font-size: 18px;
   }
@@ -4003,6 +4402,7 @@ img {
 
   .balance {
     font-size: 12px;
+    margin-right: 10px;
   }
   .balance img {
     max-width: 15px;
@@ -4034,7 +4434,7 @@ img {
   }
 
   .livechat--btn.open {
-    left: 50px;
+    left: 70px;
   }
 
   .livechat--contact {
@@ -4118,7 +4518,7 @@ img {
 
   .design_btn {
     padding: 5px 8px;
-    font-size: 13.2px;
+    font-size: 12px;
   }
 }
 @media only screen and (max-width: 991px) {
@@ -4145,7 +4545,7 @@ img {
     padding: 50px 20px;
     width: 300px;
     display: block;
-    background-color: #1a1a1a;
+    background-color: rgba(0, 0, 0, 0.8);
     position: fixed;
     left: -300px;
     justify-content: start;
@@ -4205,6 +4605,11 @@ img {
     font-size: 14.4px;
   }
 }
+@media only screen and (max-width: 991px) and (max-width: 480px) {
+  .userLink ul.nav-tabs li span {
+    font-size: 12px;
+  }
+}
 @media only screen and (max-width: 991px) {
   .real_table table th {
     font-size: 13.2px;
@@ -4240,7 +4645,7 @@ img {
     width: 100%;
     text-align: left;
     padding: 10px;
-    border-bottom: 1px solid #635603;
+    border-bottom: 1px solid #004e73;
   }
 }
 @media only screen and (max-width: 991px) {
@@ -4271,6 +4676,9 @@ img {
   .index_wincup .nav {
     flex-direction: row;
   }
+  .index_wincup .nav li {
+    width: 50%;
+  }
 }
 @media only screen and (max-width: 991px) {
   .wincup_scroll {
@@ -4279,7 +4687,7 @@ img {
 }
 @media only screen and (max-width: 991px) {
   .info_tab .nav-tabs button {
-    font-size: 15.6px;
+    font-size: 14px;
     padding: 5px 10px;
   }
 }

@@ -47,7 +47,9 @@
   
     $('.mobileNav__btn').click(function(){
         $('.mobileNav').addClass('open');
-        $('.mobileNav__btn').addClass('mobileNav--Closebtn');
+        $('.mobileNav__btn').addClass('mobileNav--Closebtn')
+        // .$('.mobileNav__btn').hide();
+        
         $('.mobileNav').removeClass('close');
 
     });

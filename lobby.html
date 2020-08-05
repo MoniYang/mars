@@ -21,8 +21,8 @@
             <div class="col-xl-2 col-lg-2 col-md-2 col-4 p-0">
               <div class="logo ">
                 <a href="home.html">
-                  <img src="content/images/logo.png" class="logo_b">
-                  <!-- <img src="content/images/logo_w.png" class="logo_w"> -->
+									<img src="content/images/logo.png" class="logo_b">
+                  <img src="content/images/logo_w.png" class="logo_w">
                 </a>
               </div>
             </div>
@@ -32,10 +32,10 @@
                 <ul>
                   <li><a href="lobby.html">Lobby</a></li>
                   <li><a href="promotion.html">promotion </a></li>
-                  <li><a href="transfer.html">Ａffiliate</a></li>
-                  <li><a href="transaction.html">crypto</a></li>
+                  <li><a href="#">Ａffiliate</a></li>
+                  <li><a href="#">crypto</a></li>
                   <li><a href="transaction.html">Transaction</a></li>
-                  <li><a href="transaction.html">payment</a></li>
+                  <li><a href="#">payment</a></li>
                 </ul>
               </div>
             </div>
@@ -70,7 +70,7 @@
                     </li>
                     <li>
                       <div id="flag_lan" class="lang">
-                      <div class="login">
+                      <div class="dropmenu__login">
                         <i class="fas fa-user"></i></button>
                         <ul>
                           <li><button class="login_btn" data-toggle="modal" data-target="#exampleModal">login </li>
@@ -91,7 +91,7 @@
             </div>
           </div>
           <!-- div nav-border -->
-          <div id="nav-border" class="col-md-10 mobileNav open">
+          <div id="nav-border" class="col-md-10 mobileNav">
             <button class="mobileNav--Closebtn d-lg-none">
               <i class="fa fa-times" aria-hidden="true"></i>
             </button>
@@ -100,12 +100,14 @@
               <h6>Hello! Elvin</h6>
             </div>
             <ul class="nav">
-              <li><a href="">promotion </a></li>
-              <li><a href="">Affiliate </a></li>
-              <li><a href="">profile</a></li>
-              <li><a href="">Crypto</a></li>
-              <li><a href="">Transaction</a></li>
-            </ul>
+							<li><a href="lobby.html">Lobby</a></li>
+								<li><a href="promotion.html">promotion </a></li>
+								<li><a href="#">Ａffiliate</a></li>
+								<li><a href="#">crypto</a></li>
+								<li><a href="transaction.html">Transaction</a></li>
+								<li><a href="#">payment</a></li>
+								<li><a href="member.html">Profile</a></li>
+					</ul>
             
           </div>
         </div>
@@ -123,27 +125,27 @@
 			<ul>
 				<li>
 					<div class="live-text">
-						<p> <a href=""><i class="fa fa-whatsapp" aria-hidden="true"></i>Whatsapp </a></p>
+						<p> <a href=""><i class="fab fa-whatsapp"></i>Whatsapp </a></p>
 					</div>
 				</li>
 				<li class="live-item">
 					<div class="live-text">
-						<p><a href=""> <i class="fa fa-weixin" aria-hidden="true"></i>wechat </a></p>
+						<p><a href=""><i class="fab fa-weixin"></i>wechat </a></p>
 					</div>
 				</li>
 				<li class="live-item">
 					<div class="live-text">
-						<p> <a href=""> line </a></p>
+						<p> <a href=""><i class="fab fa-line"></i>line </a></p>
 					</div>
 				</li>
 				<li class="live-item">
 					<div class="live-text">
-						<p> <a href=""><i class="fa fa-skype" aria-hidden="true"></i>skype </a></p>
+						<p> <a href=""><i class="fab fa-skype"></i>skype </a></p>
 					</div>
 				</li>
 				<li class="live-item">
 					<div class="live-text">
-						<p> <a href=""> <i class="fa fa-instagram" aria-hidden="true"></i>instagram </a></p>
+						<p> <a href=""><i class="fab fa-instagram-square"></i>instagram </a></p>
 					</div>
 				</li>
 			</ul>
@@ -154,742 +156,1075 @@
 		<div class="wrapper__inner" >
 			<div class="container">
 				<div class="lobby">
-				
-					<div class="d-flex flex-wrap justify-content-between">
-						<div class="col-lg-3 col-12 d-flex align-items-end p-0">
-							<button class="lobby__quickStart  d-flex justify-content-center" data-toggle="modal" data-target="#quickEnter">
-								<div class="lobby__quickImg col-6">
-									<img src="content/images/quick_img.png" alt="">
+					<div class="d-flex flex-wrap justify-content-between w-100">
+					
+						<div class="col-12 align-items-end d-flex order-md-2 order-1 p-0">
+							<div class="lobby__select">
+								<ul class="nav nav-tabs ">
+									<li class="">
+										<button class=" active" data-toggle="tab" data-target="#public">
+											<div class="lobby__gameItem">
+												<div class="lobby__gameItemInner">
+													<img src="content/images/gameLogo/game_text1.png" alt="">
+												</div>
+											</div>
+										</button>
+									</li>
+									<li class="">
+										<button class="" data-toggle="tab" data-target="#vip">
+											<div class="lobby__gameItem">
+												<div class="lobby__gameItemInner">
+													<img src="content/images/gameLogo/game_text2.png" alt="">
+												</div>
+											</div>
+										</button>
+									</li>
+									<li class="">
+										<button class="" data-toggle="tab" data-target="#roulette">
+											<div class="lobby__gameItem">
+												<div class="lobby__gameItemInner">
+													<img src="content/images/gameLogo/game_text3.png" alt="">
+												</div>
+											</div>
+										</button>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- <div class="col-xl-3 col-lg-3 col-md-4 col-12 order-md-3  d-none order-1 align-items-end ">
+								<div class="lobby__userInfo  d-flex flex-wrap">
+									<div class="col-4 d-md-block d-none">
+										<div class="lobby__userImg ">
+											<img src="content/images/user.png" alt="">
+										</div>
+									</div>
+									<div class="col-8 lobby__userText">
+										<ul>
+											<li>Welcom!</li>
+											<li>Elvin</li>
+											<li>$123456</li>
+										</ul>
+									</div>
+									
 								</div>
-								<p class="col-6 p-0">quick<br>seat <span class="handRight rightInfinite"><i class="far fa-hand-point-left"></i></span></p>
-							</button>
-						</div>
-					<div class="col-xl-6 col-lg-6 col-md-8 align-items-end d-flex ">
-						<div class="lobby__select">
-							<ul class="nav nav-tabs ">
-								<li class="">
-									<button class=" active" data-toggle="tab" data-target="#roulette">
-										<div class="lobby__gameItem">
-											<div class="lobby__gameItemInner">
-												<img src="content/images/gameLogo/game_text1.png" alt="">
-											</div>
+							
+						</div> -->
+						<div class="col-12 order-md-3 order-2 p-0">
+							<div class="tab-content">
+								<div class="tab-pane fade show active" id="public">
+									<div class="lobby__gameboard">
+										<div class="lobby__quickStart">
+											<button class="  d-flex justify-content-center" data-toggle="modal" data-target="#quickEnter">
+												<div class="lobby__quickImg">
+													<img src="content/images/quick_img.png" alt="">
+												</div>
+												<p class="">quick seat <span class="handRight rightInfinite"><i class="far fa-hand-point-left"></i></span></p>
+											</button>
 										</div>
-									</button>
-								</li>
-								<li class="">
-									<button class="" data-toggle="tab" data-target="#public">
-										<div class="lobby__gameItem">
-											<div class="lobby__gameItemInner">
-												<img src="content/images/gameLogo/game_text2.png" alt="">
-											</div>
+										<div class="lobby__gameboardInner ">
+											<h5 class="lobby__gameTopic title_style">Up & down Public</h5>
+											<ul>
+												<li><button><i class="fas fa-clipboard-list"></i></i>Bet history</button></li>
+												<li class="active"><button><i class="fas fa-sync"></i>Refresh</button></li>
+												<li><button><i class="fas fa-undo-alt"></i>Back</button></li>
+											</ul>
 										</div>
-									</button>
-								</li>
-								<li class="">
-									<button class="" data-toggle="tab" data-target="#vip">
-										<div class="lobby__gameItem">
-											<div class="lobby__gameItemInner">
-												<img src="content/images/gameLogo/game_text3.png" alt="">
-											</div>
+									</div>
+									<div class="lobby__area">
+										<div class="lobby__list">
+											<ul>
+												<li>
+													<div class="lobby__gametablebox active">
+														<div class="lobby__gameTableInner">
+																<div class="lobby__gameTable">
+																	<div class="lobby__gameInfo">
+																		<p class="lobby__gameTitle">U & d public 034</p>
+																		<div class="lobby__gamePeople">
+																			<i class="fas fa-users"></i>8/9
+																		</div>
+																	</div>
+																	<ul>
+																		<li><span>Min Buyin</span> $20</li>
+																		<li><span>Max Buyin</span> $600</li>
+																		<li><span>Banker Min</span> $600</li>
+																	</ul>
+																</div>
+																<button class="lobby__gameTableButton">
+																	<p>View</p>
+																	<!-- <img src="content/images/user.png" alt=""> -->
+																</button>
+															
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="lobby__gametablebox hot_active">
+														<div class="lobby__gameTableInner">
+																<div class="lobby__gameTable">
+																	<div class="lobby__gameInfo">
+																		
+																		<p class="lobby__gameTitle">U & d public 034</p>
+																		<div class="lobby__gamePeople">
+																			<i class="fas fa-users"></i>8/9
+																		</div>
+																	</div>
+																	<ul>
+																		<li><span>Min Buyin</span> $20</li>
+																		<li><span>Max Buyin</span> $600</li>
+																		<li><span class="hot">Banker Min</span> $600</li>
+																	</ul>
+																</div>
+																<button class="lobby__gameTableButton">
+																	<p class="lobby__gameHot">
+																		<i class="fab fa-hotjar"></i>HOT
+																	</p>
+																	<p>full</p>
+																	<!-- <img src="content/images/user.png" alt=""> -->
+																</button>
+															
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="lobby__gametablebox ">
+														<div class="lobby__gameTableInner">
+																<div class="lobby__gameTable">
+																	<div class="lobby__gameInfo">
+																	
+																		<p class="lobby__gameTitle">U & d public 034</p>
+																		<div class="lobby__gamePeople">
+																			<i class="fas fa-users"></i>8/9
+																		</div>
+																	</div>
+																	<ul>
+																		<li><span>Min Buyin</span> $20</li>
+																		<li><span>Max Buyin</span> $600</li>
+																		<li><span>Banker Min</span> $600</li>
+																	</ul>
+																</div>
+																<button class="lobby__gameTableButton">
+																
+																	<p>View</p>
+																	<!-- <img src="content/images/user.png" alt=""> -->
+																</button>
+															
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="lobby__gametablebox ">
+														<div class="lobby__gameTableInner">
+																<div class="lobby__gameTable">
+																	<div class="lobby__gameInfo">
+																	
+																		<p class="lobby__gameTitle">U & d public 034</p>
+																		<div class="lobby__gamePeople">
+																			<i class="fas fa-users"></i>8/9
+																		</div>
+																	</div>
+																	<ul>
+																		<li><span>Min Buyin</span> $20</li>
+																		<li><span>Max Buyin</span> $600</li>
+																		<li><span>Banker Min</span> $600</li>
+																	</ul>
+																</div>
+																<button class="lobby__gameTableButton">
+																
+																	<p>View</p>
+																	<!-- <img src="content/images/user.png" alt=""> -->
+																</button>
+															
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="lobby__gametablebox ">
+														<div class="lobby__gameTableInner">
+																<div class="lobby__gameTable">
+																	<div class="lobby__gameInfo">
+																	
+																		<p class="lobby__gameTitle">U & d public 034</p>
+																		<div class="lobby__gamePeople">
+																			<i class="fas fa-users"></i>8/9
+																		</div>
+																	</div>
+																	<ul>
+																		<li><span>Min Buyin</span> $20</li>
+																		<li><span>Max Buyin</span> $600</li>
+																		<li><span>Banker Min</span> $600</li>
+																	</ul>
+																</div>
+																<button class="lobby__gameTableButton">
+																
+																	<p>View</p>
+																	<!-- <img src="content/images/user.png" alt=""> -->
+																</button>
+															
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="lobby__gametablebox ">
+														<div class="lobby__gameTableInner">
+																<div class="lobby__gameTable">
+																	<div class="lobby__gameInfo">
+																	
+																		<p class="lobby__gameTitle">U & d public 034</p>
+																		<div class="lobby__gamePeople">
+																			<i class="fas fa-users"></i>8/9
+																		</div>
+																	</div>
+																	<ul>
+																		<li><span>Min Buyin</span> $20</li>
+																		<li><span>Max Buyin</span> $600</li>
+																		<li><span>Banker Min</span> $600</li>
+																	</ul>
+																</div>
+																<button class="lobby__gameTableButton">
+																
+																	<p>View</p>
+																	<!-- <img src="content/images/user.png" alt=""> -->
+																</button>
+															
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="lobby__gametablebox ">
+														<div class="lobby__gameTableInner">
+																<div class="lobby__gameTable">
+																	<div class="lobby__gameInfo">
+																	
+																		<p class="lobby__gameTitle">U & d public 034</p>
+																		<div class="lobby__gamePeople">
+																			<i class="fas fa-users"></i>8/9
+																		</div>
+																	</div>
+																	<ul>
+																		<li><span>Min Buyin</span> $20</li>
+																		<li><span>Max Buyin</span> $600</li>
+																		<li><span>Banker Min</span> $600</li>
+																	</ul>
+																</div>
+																<button class="lobby__gameTableButton">
+																
+																	<p>View</p>
+																	<!-- <img src="content/images/user.png" alt=""> -->
+																</button>
+															
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="lobby__gametablebox ">
+														<div class="lobby__gameTableInner">
+																<div class="lobby__gameTable">
+																	<div class="lobby__gameInfo">
+																	
+																		<p class="lobby__gameTitle">U & d public 034</p>
+																		<div class="lobby__gamePeople">
+																			<i class="fas fa-users"></i>8/9
+																		</div>
+																	</div>
+																	<ul>
+																		<li><span>Min Buyin</span> $20</li>
+																		<li><span>Max Buyin</span> $600</li>
+																		<li><span>Banker Min</span> $600</li>
+																	</ul>
+																</div>
+																<button class="lobby__gameTableButton">
+																
+																	<p>View</p>
+																	<!-- <img src="content/images/user.png" alt=""> -->
+																</button>
+															
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="lobby__gametablebox ">
+														<div class="lobby__gameTableInner">
+																<div class="lobby__gameTable">
+																	<div class="lobby__gameInfo">
+																	
+																		<p class="lobby__gameTitle">U & d public 034</p>
+																		<div class="lobby__gamePeople">
+																			<i class="fas fa-users"></i>8/9
+																		</div>
+																	</div>
+																	<ul>
+																		<li><span>Min Buyin</span> $20</li>
+																		<li><span>Max Buyin</span> $600</li>
+																		<li><span>Banker Min</span> $600</li>
+																	</ul>
+																</div>
+																<button class="lobby__gameTableButton">
+																
+																	<p>View</p>
+																	<!-- <img src="content/images/user.png" alt=""> -->
+																</button>
+															
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="lobby__gametablebox ">
+														<div class="lobby__gameTableInner">
+																<div class="lobby__gameTable">
+																	<div class="lobby__gameInfo">
+																	
+																		<p class="lobby__gameTitle">U & d public 034</p>
+																		<div class="lobby__gamePeople">
+																			<i class="fas fa-users"></i>8/9
+																		</div>
+																	</div>
+																	<ul>
+																		<li><span>Min Buyin</span> $20</li>
+																		<li><span>Max Buyin</span> $600</li>
+																		<li><span>Banker Min</span> $600</li>
+																	</ul>
+																</div>
+																<button class="lobby__gameTableButton">
+																
+																	<p>View</p>
+																	<!-- <img src="content/images/user.png" alt=""> -->
+																</button>
+															
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="lobby__gametablebox ">
+														<div class="lobby__gameTableInner">
+																<div class="lobby__gameTable">
+																	<div class="lobby__gameInfo">
+																	
+																		<p class="lobby__gameTitle">U & d public 034</p>
+																		<div class="lobby__gamePeople">
+																			<i class="fas fa-users"></i>8/9
+																		</div>
+																	</div>
+																	<ul>
+																		<li><span>Min Buyin</span> $20</li>
+																		<li><span>Max Buyin</span> $600</li>
+																		<li><span>Banker Min</span> $600</li>
+																	</ul>
+																</div>
+																<button class="lobby__gameTableButton">
+																
+																	<p>View</p>
+																	<!-- <img src="content/images/user.png" alt=""> -->
+																</button>
+															
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="lobby__gametablebox ">
+														<div class="lobby__gameTableInner">
+																<div class="lobby__gameTable">
+																	<div class="lobby__gameInfo">
+																	
+																		<p class="lobby__gameTitle">U & d public 034</p>
+																		<div class="lobby__gamePeople">
+																			<i class="fas fa-users"></i>8/9
+																		</div>
+																	</div>
+																	<ul>
+																		<li><span>Min Buyin</span> $20</li>
+																		<li><span>Max Buyin</span> $600</li>
+																		<li><span>Banker Min</span> $600</li>
+																	</ul>
+																</div>
+																<button class="lobby__gameTableButton">
+																
+																	<p>View</p>
+																	<!-- <img src="content/images/user.png" alt=""> -->
+																</button>
+															
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="lobby__gametablebox ">
+														<div class="lobby__gameTableInner">
+																<div class="lobby__gameTable">
+																	<div class="lobby__gameInfo">
+																	
+																		<p class="lobby__gameTitle">U & d public 034</p>
+																		<div class="lobby__gamePeople">
+																			<i class="fas fa-users"></i>8/9
+																		</div>
+																	</div>
+																	<ul>
+																		<li><span>Min Buyin</span> $20</li>
+																		<li><span>Max Buyin</span> $600</li>
+																		<li><span>Banker Min</span> $600</li>
+																	</ul>
+																</div>
+																<button class="lobby__gameTableButton">
+																
+																	<p>View</p>
+																	<!-- <img src="content/images/user.png" alt=""> -->
+																</button>
+															
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="lobby__gametablebox ">
+														<div class="lobby__gameTableInner">
+																<div class="lobby__gameTable">
+																	<div class="lobby__gameInfo">
+																	
+																		<p class="lobby__gameTitle">U & d public 034</p>
+																		<div class="lobby__gamePeople">
+																			<i class="fas fa-users"></i>8/9
+																		</div>
+																	</div>
+																	<ul>
+																		<li><span>Min Buyin</span> $20</li>
+																		<li><span>Max Buyin</span> $600</li>
+																		<li><span>Banker Min</span> $600</li>
+																	</ul>
+																</div>
+																<button class="lobby__gameTableButton">
+																
+																	<p>View</p>
+																	<!-- <img src="content/images/user.png" alt=""> -->
+																</button>
+															
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="lobby__gametablebox ">
+														<div class="lobby__gameTableInner">
+																<div class="lobby__gameTable">
+																	<div class="lobby__gameInfo">
+																	
+																		<p class="lobby__gameTitle">U & d public 034</p>
+																		<div class="lobby__gamePeople">
+																			<i class="fas fa-users"></i>8/9
+																		</div>
+																	</div>
+																	<ul>
+																		<li><span>Min Buyin</span> $20</li>
+																		<li><span>Max Buyin</span> $600</li>
+																		<li><span>Banker Min</span> $600</li>
+																	</ul>
+																</div>
+																<button class="lobby__gameTableButton">
+																
+																	<p>View</p>
+																	<!-- <img src="content/images/user.png" alt=""> -->
+																</button>
+															
+														</div>
+													</div>
+												</li>
+											
+											</ul>
 										</div>
-									</button>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-xl-3 col-lg-3 col-md-4 d-flex align-items-end ">
-							<div class="lobby__userInfo  d-flex flex-wrap">
-								<div class="col-4">
-									<div class="lobby__userImg ">
-										<img src="content/images/user.png" alt="">
 									</div>
 								</div>
-								<div class="col-8 lobby__userText">
-									<ul>
-										<li>Welcom!</li>
-										<li>Elvin</li>
-										<li>$123456</li>
-									</ul>
+								<div class="tab-pane  fade" id="vip">
+									<div class="lobby__gameboard">
+										<div class="lobby__quickStart">
+											<button class="  d-flex justify-content-center" data-toggle="modal" data-target="#quickEnter">
+												<div class="lobby__quickImg">
+													<img src="content/images/quick_img.png" alt="">
+												</div>
+												<p class="">quick seat <span class="handRight rightInfinite"><i class="far fa-hand-point-left"></i></span></p>
+											</button>
+										</div>
+										<div class="lobby__gameboardInner ">
+											<h5 class="lobby__gameTopic title_style">Up & down VIP</h5>
+											<ul>
+												<li><button><i class="fas fa-clipboard-list"></i></i>Bet history</button></li>
+												<li class="active"><button><i class="fas fa-sync"></i>Refresh</button></li>
+												<li><button><i class="fas fa-undo-alt"></i>Back</button></li>
+											</ul>
+										</div>
+									</div>
+									<div class="lobby__area">
+										<div class="lobby__list">
+											<ul>
+												<li>
+													<div class="lobby__gametablebox active">
+														<div class="lobby__gameTableInner">
+																<div class="lobby__gameTable">
+																	<div class="lobby__gameInfo">
+																		<p class="lobby__gameTitle">U & d VIP 034</p>
+																		<div class="lobby__gamePeople">
+																			<i class="fas fa-users"></i>8/9
+																		</div>
+																	</div>
+																	<ul>
+																		<li><span>Min Buyin</span> $20</li>
+																		<li><span>Max Buyin</span> $600</li>
+																		<li><span>Banker Min</span> $0</li>
+																	</ul>
+																</div>
+																<button class="lobby__gameTableButton">
+																	<p>View</p>
+																	<!-- <img src="content/images/user.png" alt=""> -->
+																</button>
+															
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="lobby__gametablebox hot_active">
+														<div class="lobby__gameTableInner">
+																<div class="lobby__gameTable">
+																	<div class="lobby__gameInfo">
+																		
+																		<p class="lobby__gameTitle">U & d VIP 034</p>
+																		<div class="lobby__gamePeople">
+																			<i class="fas fa-users"></i>8/9
+																		</div>
+																	</div>
+																	<ul>
+																		<li><span>Min Buyin</span> $20</li>
+																		<li><span>Max Buyin</span> $600</li>
+																		<li><span class="hot">Banker Min</span>$0</li>
+																	</ul>
+																</div>
+																<button class="lobby__gameTableButton">
+																	<p class="lobby__gameHot">
+																		<i class="fab fa-hotjar"></i>HOT
+																	</p>
+																	<p>full</p>
+																	<!-- <img src="content/images/user.png" alt=""> -->
+																</button>
+															
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="lobby__gametablebox ">
+														<div class="lobby__gameTableInner">
+																<div class="lobby__gameTable">
+																	<div class="lobby__gameInfo">
+																		
+																		<p class="lobby__gameTitle">U & d VIP 034</p>
+																		<div class="lobby__gamePeople">
+																			<i class="fas fa-users"></i>8/9
+																		</div>
+																	</div>
+																	<ul>
+																		<li><span>Min Buyin</span> $20</li>
+																		<li><span>Max Buyin</span> $600</li>
+																		<li><span>Banker Min</span>$0</li>
+																	</ul>
+																</div>
+																<button class="lobby__gameTableButton">
+																
+																	<p>full</p>
+																	<!-- <img src="content/images/user.png" alt=""> -->
+																</button>
+															
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="lobby__gametablebox ">
+														<div class="lobby__gameTableInner">
+																<div class="lobby__gameTable">
+																	<div class="lobby__gameInfo">
+																		
+																		<p class="lobby__gameTitle">U & d VIP 034</p>
+																		<div class="lobby__gamePeople">
+																			<i class="fas fa-users"></i>8/9
+																		</div>
+																	</div>
+																	<ul>
+																		<li><span>Min Buyin</span> $20</li>
+																		<li><span>Max Buyin</span> $600</li>
+																		<li><span>Banker Min</span>$0</li>
+																	</ul>
+																</div>
+																<button class="lobby__gameTableButton">
+																
+																	<p>full</p>
+																	<!-- <img src="content/images/user.png" alt=""> -->
+																</button>
+															
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="lobby__gametablebox ">
+														<div class="lobby__gameTableInner">
+																<div class="lobby__gameTable">
+																	<div class="lobby__gameInfo">
+																		
+																		<p class="lobby__gameTitle">U & d VIP 034</p>
+																		<div class="lobby__gamePeople">
+																			<i class="fas fa-users"></i>8/9
+																		</div>
+																	</div>
+																	<ul>
+																		<li><span>Min Buyin</span> $20</li>
+																		<li><span>Max Buyin</span> $600</li>
+																		<li><span>Banker Min</span>$0</li>
+																	</ul>
+																</div>
+																<button class="lobby__gameTableButton">
+																
+																	<p>full</p>
+																	<!-- <img src="content/images/user.png" alt=""> -->
+																</button>
+															
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="lobby__gametablebox ">
+														<div class="lobby__gameTableInner">
+																<div class="lobby__gameTable">
+																	<div class="lobby__gameInfo">
+																		
+																		<p class="lobby__gameTitle">U & d VIP 034</p>
+																		<div class="lobby__gamePeople">
+																			<i class="fas fa-users"></i>8/9
+																		</div>
+																	</div>
+																	<ul>
+																		<li><span>Min Buyin</span> $20</li>
+																		<li><span>Max Buyin</span> $600</li>
+																		<li><span>Banker Min</span>$0</li>
+																	</ul>
+																</div>
+																<button class="lobby__gameTableButton">
+																
+																	<p>full</p>
+																	<!-- <img src="content/images/user.png" alt=""> -->
+																</button>
+															
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="lobby__gametablebox ">
+														<div class="lobby__gameTableInner">
+																<div class="lobby__gameTable">
+																	<div class="lobby__gameInfo">
+																		
+																		<p class="lobby__gameTitle">U & d VIP 034</p>
+																		<div class="lobby__gamePeople">
+																			<i class="fas fa-users"></i>8/9
+																		</div>
+																	</div>
+																	<ul>
+																		<li><span>Min Buyin</span> $20</li>
+																		<li><span>Max Buyin</span> $600</li>
+																		<li><span>Banker Min</span>$0</li>
+																	</ul>
+																</div>
+																<button class="lobby__gameTableButton">
+																
+																	<p>full</p>
+																	<!-- <img src="content/images/user.png" alt=""> -->
+																</button>
+															
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="lobby__gametablebox ">
+														<div class="lobby__gameTableInner">
+																<div class="lobby__gameTable">
+																	<div class="lobby__gameInfo">
+																		
+																		<p class="lobby__gameTitle">U & d VIP 034</p>
+																		<div class="lobby__gamePeople">
+																			<i class="fas fa-users"></i>8/9
+																		</div>
+																	</div>
+																	<ul>
+																		<li><span>Min Buyin</span> $20</li>
+																		<li><span>Max Buyin</span> $600</li>
+																		<li><span>Banker Min</span>$0</li>
+																	</ul>
+																</div>
+																<button class="lobby__gameTableButton">
+																
+																	<p>full</p>
+																	<!-- <img src="content/images/user.png" alt=""> -->
+																</button>
+															
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="lobby__gametablebox ">
+														<div class="lobby__gameTableInner">
+																<div class="lobby__gameTable">
+																	<div class="lobby__gameInfo">
+																		
+																		<p class="lobby__gameTitle">U & d VIP 034</p>
+																		<div class="lobby__gamePeople">
+																			<i class="fas fa-users"></i>8/9
+																		</div>
+																	</div>
+																	<ul>
+																		<li><span>Min Buyin</span> $20</li>
+																		<li><span>Max Buyin</span> $600</li>
+																		<li><span>Banker Min</span>$0</li>
+																	</ul>
+																</div>
+																<button class="lobby__gameTableButton">
+																
+																	<p>full</p>
+																	<!-- <img src="content/images/user.png" alt=""> -->
+																</button>
+															
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="lobby__gametablebox ">
+														<div class="lobby__gameTableInner">
+																<div class="lobby__gameTable">
+																	<div class="lobby__gameInfo">
+																		
+																		<p class="lobby__gameTitle">U & d VIP 034</p>
+																		<div class="lobby__gamePeople">
+																			<i class="fas fa-users"></i>8/9
+																		</div>
+																	</div>
+																	<ul>
+																		<li><span>Min Buyin</span> $20</li>
+																		<li><span>Max Buyin</span> $600</li>
+																		<li><span>Banker Min</span>$0</li>
+																	</ul>
+																</div>
+																<button class="lobby__gameTableButton">
+																
+																	<p>full</p>
+																	<!-- <img src="content/images/user.png" alt=""> -->
+																</button>
+															
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="lobby__gametablebox ">
+														<div class="lobby__gameTableInner">
+																<div class="lobby__gameTable">
+																	<div class="lobby__gameInfo">
+																		
+																		<p class="lobby__gameTitle">U & d VIP 034</p>
+																		<div class="lobby__gamePeople">
+																			<i class="fas fa-users"></i>8/9
+																		</div>
+																	</div>
+																	<ul>
+																		<li><span>Min Buyin</span> $20</li>
+																		<li><span>Max Buyin</span> $600</li>
+																		<li><span>Banker Min</span>$0</li>
+																	</ul>
+																</div>
+																<button class="lobby__gameTableButton">
+																
+																	<p>full</p>
+																	<!-- <img src="content/images/user.png" alt=""> -->
+																</button>
+															
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="lobby__gametablebox ">
+														<div class="lobby__gameTableInner">
+																<div class="lobby__gameTable">
+																	<div class="lobby__gameInfo">
+																		
+																		<p class="lobby__gameTitle">U & d VIP 034</p>
+																		<div class="lobby__gamePeople">
+																			<i class="fas fa-users"></i>8/9
+																		</div>
+																	</div>
+																	<ul>
+																		<li><span>Min Buyin</span> $20</li>
+																		<li><span>Max Buyin</span> $600</li>
+																		<li><span>Banker Min</span>$0</li>
+																	</ul>
+																</div>
+																<button class="lobby__gameTableButton">
+																
+																	<p>full</p>
+																	<!-- <img src="content/images/user.png" alt=""> -->
+																</button>
+															
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="lobby__gametablebox ">
+														<div class="lobby__gameTableInner">
+																<div class="lobby__gameTable">
+																	<div class="lobby__gameInfo">
+																		
+																		<p class="lobby__gameTitle">U & d VIP 034</p>
+																		<div class="lobby__gamePeople">
+																			<i class="fas fa-users"></i>8/9
+																		</div>
+																	</div>
+																	<ul>
+																		<li><span>Min Buyin</span> $20</li>
+																		<li><span>Max Buyin</span> $600</li>
+																		<li><span>Banker Min</span>$0</li>
+																	</ul>
+																</div>
+																<button class="lobby__gameTableButton">
+																
+																	<p>full</p>
+																	<!-- <img src="content/images/user.png" alt=""> -->
+																</button>
+															
+														</div>
+													</div>
+												</li>
+
+												<li>
+													<div class="lobby__gametablebox ">
+														<div class="lobby__gameTableInner">
+																<div class="lobby__gameTable">
+																	<div class="lobby__gameInfo">
+																		
+																		<p class="lobby__gameTitle">U & d VIP 034</p>
+																		<div class="lobby__gamePeople">
+																			<i class="fas fa-users"></i>8/9
+																		</div>
+																	</div>
+																	<ul>
+																		<li><span>Min Buyin</span> $20</li>
+																		<li><span>Max Buyin</span> $600</li>
+																		<li><span>Banker Min</span>$0</li>
+																	</ul>
+																</div>
+																<button class="lobby__gameTableButton">
+																
+																	<p>full</p>
+																	<!-- <img src="content/images/user.png" alt=""> -->
+																</button>
+															
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="lobby__gametablebox ">
+														<div class="lobby__gameTableInner">
+																<div class="lobby__gameTable">
+																	<div class="lobby__gameInfo">
+																		
+																		<p class="lobby__gameTitle">U & d VIP 034</p>
+																		<div class="lobby__gamePeople">
+																			<i class="fas fa-users"></i>8/9
+																		</div>
+																	</div>
+																	<ul>
+																		<li><span>Min Buyin</span> $20</li>
+																		<li><span>Max Buyin</span> $600</li>
+																		<li><span>Banker Min</span>$0</li>
+																	</ul>
+																</div>
+																<button class="lobby__gameTableButton">
+																
+																	<p>full</p>
+																	<!-- <img src="content/images/user.png" alt=""> -->
+																</button>
+															
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
 								</div>
-								
+								<div class="tab-pane  fade" id="roulette">
+									<div class="lobby__gameboard">
+										<div class="lobby__quickStart">
+											<button class="  d-flex justify-content-center" data-toggle="modal" data-target="#quickEnter">
+												<div class="lobby__quickImg">
+													<img src="content/images/quick_img.png" alt="">
+												</div>
+												<p class="">quick seat <span class="handRight rightInfinite"><i class="far fa-hand-point-left"></i></span></p>
+											</button>
+										</div>
+										<div class="lobby__gameboardInner ">
+											<h5 class="lobby__gameTopic title_style">Up & down VIP</h5>
+											<ul>
+												<li><button><i class="fas fa-clipboard-list"></i></i>Bet history</button></li>
+												<li class="active"><button><i class="fas fa-sync"></i>Refresh</button></li>
+												<li><button><i class="fas fa-undo-alt"></i>Back</button></li>
+											</ul>
+										</div>
+									</div>
+									<div class="lobby__area">
+										<div class="lobby__list">
+											<ul>
+												<li>
+													<div class="lobby__gametablebox ">
+														<div class="lobby__gameTableInner">
+																<div class="lobby__gameTable">
+																	<div class="lobby__gameInfo">
+																		
+																		<p class="lobby__gameTitle">Roulette 034</p>
+																		<div class="lobby__gamePeople">
+																			<i class="fas fa-users"></i>8/9
+																		</div>
+																	</div>
+																	<ul>
+																		<li><span>Min Buyin</span> $20</li>
+																		<li><span>Max Buyin</span> $600</li>
+																		<li><span>Banker Min</span>$0</li>
+																	</ul>
+																</div>
+																<button class="lobby__gameTableButton">
+																
+																	<p>full</p>
+																	<!-- <img src="content/images/user.png" alt=""> -->
+																</button>
+															
+														</div>
+													</div>
+												</li>
+
+												<li>
+													<div class="lobby__gametablebox ">
+														<div class="lobby__gameTableInner">
+																<div class="lobby__gameTable">
+																	<div class="lobby__gameInfo">
+																		
+																		<p class="lobby__gameTitle">Roulette 034</p>
+																		<div class="lobby__gamePeople">
+																			<i class="fas fa-users"></i>8/9
+																		</div>
+																	</div>
+																	<ul>
+																		<li><span>Min Buyin</span> $20</li>
+																		<li><span>Max Buyin</span> $600</li>
+																		<li><span>Banker Min</span>$0</li>
+																	</ul>
+																</div>
+																<button class="lobby__gameTableButton">
+																
+																	<p>full</p>
+																	<!-- <img src="content/images/user.png" alt=""> -->
+																</button>
+															
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="lobby__gametablebox ">
+														<div class="lobby__gameTableInner">
+																<div class="lobby__gameTable">
+																	<div class="lobby__gameInfo">
+																		
+																		<p class="lobby__gameTitle">Roulette 034</p>
+																		<div class="lobby__gamePeople">
+																			<i class="fas fa-users"></i>8/9
+																		</div>
+																	</div>
+																	<ul>
+																		<li><span>Min Buyin</span> $20</li>
+																		<li><span>Max Buyin</span> $600</li>
+																		<li><span>Banker Min</span>$0</li>
+																	</ul>
+																</div>
+																<button class="lobby__gameTableButton">
+																
+																	<p>full</p>
+																	<!-- <img src="content/images/user.png" alt=""> -->
+																</button>
+															
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
 							</div>
-						
+						</div>
 					</div>
+					<!-- Tab panes -->
 				
 				</div>
-					<!-- Tab panes -->
-					<div class="col-12">
-					<div class="tab-content">
-						<div class="lobby__gameboard">
-							<h5 class="lobby__gameTopic title_style">Up & down public</h5>
-							<ul>
-								<li><button><i class="fas fa-clipboard-list"></i></i>Bet history</button></li>
-								<li class="active"><button><i class="fas fa-sync"></i>Refresh</button></li>
-								<li><button><i class="fas fa-undo-alt"></i>Back</button></li>
-							</ul>
-						</div>
-						<div class="tab-pane fade show active" id="roulette">
-							<div class="lobby__area">
-								<div class="lobby__list">
-									<ul>
-										<li>
-											<div class="lobby__gametable active">
-												<div class="lobby__gameTableInner">
-													<div class="d-flex">
-														
-														<div class="lobby__gameInfo">
-															<div class="d-flex flex-column align-items-start">
-																<p class="lobby__gameTitle">Roulette 034</p>
-																<div class="lobby__gamePeople">
-																	<i class="fas fa-users"></i>8/9
-																</div>
-															</div>
-															
-														</div>
-
-														<div class="lobby__gameTable">
-															<ul>
-																<li><span>Min Buyin</span> $20</li>
-																<li><span>Max Buyin</span> $600</li>
-																<li><span>Banker Min</span> $600</li>
-															</ul>
-														</div>
-														<button class="lobby__gameTableButton">
-                              <p>View</p>
-															<!-- <img src="content/images/user.png" alt=""> -->
-                            </button>
-													</div>
-												</div>
-											</div>
-										</li>
-										<li>
-											<div class="lobby__gametable ">
-												<div class="lobby__gameTableInner">
-													<div class="d-flex">
-														
-														<div class="lobby__gameInfo">
-															<div class="d-flex flex-column align-items-start">
-																<p class="lobby__gameTitle">Roulette 034</p>
-																<div class="lobby__gamePeople">
-																	<i class="fas fa-users"></i>16
-																</div>
-															</div>
-															
-														</div>
-
-														<div class="lobby__gameTable">
-															<ul>
-																<li><span>Min Buyin</span> $20</li>
-																<li><span>Max Buyin</span> $600</li>
-																<li><span>Banker Min</span> $600</li>
-															</ul>
-														</div>
-														<button class="lobby__gameTableButton">
-                              <p>View</p>
-															<!-- <img src="content/images/user.png" alt=""> -->
-                            </button>
-													</div>
-												</div>
-											</div>
-										</li>
-										<li>
-											<div class="lobby__gametable ">
-												<div class="lobby__gameTableInner">
-													<div class="d-flex">
-														<div class="lobby__gameInfo">
-															<div class="d-flex flex-column align-items-start">
-																<p class="lobby__gameTitle">Roulette 034</p>
-																<div class="lobby__gamePeople">
-																	<i class="fas fa-users"></i>16
-																</div>
-															</div>
-														</div>
-														<div class="lobby__gameTable">
-															<ul>
-																<li><span>Min Buyin</span> $20</li>
-																<li><span>Max Buyin</span> $600</li>
-																<li><span>Banker Min</span> $600</li>
-															</ul>
-														</div>
-														<button class="lobby__gameTableButton">
-                              <p>View</p>
-															<!-- <img src="content/images/user.png" alt=""> -->
-                            </button>
-													</div>
-												</div>
-											</div>
-                    </li>
-										<li>
-											<div class="lobby__gametable hot_active">
-												<div class="lobby__gameTableInner">
-													<div class="d-flex">
-														<div class="lobby__gameInfo">
-															<div class="d-flex flex-column align-items-start">
-																<p class="lobby__gameHot">
-																	<i class="fab fa-hotjar"></i>HOT
-																</p>
-																<p class="lobby__gameTitle">Roulette 034</p>
-																<div class="lobby__gamePeople">
-																	<i class="fas fa-users"></i>16
-																</div>
-															</div>
-														</div>
-														<div class="lobby__gameTable">
-															<ul>
-																<li><span>Min Buyin</span> $20</li>
-																<li><span>Max Buyin</span> $600</li>
-																<li><span class="hot">Banker Min</span> $600</li>
-															</ul>
-														</div>
-														<button class="lobby__gameTableButton ">
-                              <p>Full</p>
-															<!-- <img src="content/images/user.png" alt=""> -->
-                            </button>
-													</div>
-												</div>
-											</div>
-                    </li>
-                  	<li>
-											<div class="lobby__gametable ">
-												<div class="lobby__gameTableInner">
-													<div class="d-flex">
-														<div class="lobby__gameInfo">
-															<div class="d-flex flex-column align-items-start">
-																<p class="lobby__gameTitle">Roulette 034</p>
-																<div class="lobby__gamePeople ">
-																	<i class="fas fa-users"></i>16
-																</div>
-															</div>
-														</div>
-														<div class="lobby__gameTable">
-															<ul>
-																<li><span>Min Buyin</span> $20</li>
-																<li><span>Max Buyin</span> $600</li>
-																<li><span>Banker Min</span> $600</li>
-															</ul>
-														</div>
-														<button class="lobby__gameTableButton">
-                              <p>View</p>
-															<!-- <img src="content/images/user.png" alt=""> -->
-                            </button>
-													</div>
-												</div>
-											</div>
-										</li>
-										<li>
-											<div class="lobby__gametable ">
-												<div class="lobby__gameTableInner">
-													<div class="d-flex">
-														<div class="lobby__gameInfo">
-															<div class="d-flex flex-column align-items-start">
-																<p class="lobby__gameTitle">Roulette 034</p>
-																<div class="lobby__gamePeople ">
-																	<i class="fas fa-users"></i>16
-																</div>
-															</div>
-														</div>
-														<div class="lobby__gameTable">
-															<ul>
-																<li><span>Min Buyin</span> $20</li>
-																<li><span>Max Buyin</span> $600</li>
-																<li><span>Banker Min</span> $600</li>
-															</ul>
-														</div>
-														<button class="lobby__gameTableButton">
-                              <p>View</p>
-															<!-- <img src="content/images/user.png" alt=""> -->
-                            </button>
-													</div>
-												</div>
-											</div>
-										</li>
-										<li>
-											<div class="lobby__gametable ">
-												<div class="lobby__gameTableInner">
-													<div class="d-flex">
-														<div class="lobby__gameInfo">
-															<div class="d-flex flex-column align-items-start">
-																<p class="lobby__gameTitle">Roulette 034</p>
-																<div class="lobby__gamePeople ">
-																	<i class="fas fa-users"></i>16
-																</div>
-															</div>
-														</div>
-														<div class="lobby__gameTable">
-															<ul>
-																<li><span>Min Buyin</span> $20</li>
-																<li><span>Max Buyin</span> $600</li>
-																<li><span>Banker Min</span> $600</li>
-															</ul>
-														</div>
-														<button class="lobby__gameTableButton">
-                              <p>View</p>
-															<!-- <img src="content/images/user.png" alt=""> -->
-                            </button>
-													</div>
-												</div>
-											</div>
-										</li>
-										<li>
-											<div class="lobby__gametable ">
-												<div class="lobby__gameTableInner">
-													<div class="d-flex">
-														<div class="lobby__gameInfo">
-															<div class="d-flex flex-column align-items-start">
-																<p class="lobby__gameTitle">Roulette 034</p>
-																<div class="lobby__gamePeople ">
-																	<i class="fas fa-users"></i>16
-																</div>
-															</div>
-														</div>
-														<div class="lobby__gameTable">
-															<ul>
-																<li><span>Min Buyin</span> $20</li>
-																<li><span>Max Buyin</span> $600</li>
-																<li><span>Banker Min</span> $600</li>
-															</ul>
-														</div>
-														<button class="lobby__gameTableButton">
-                              <p>View</p>
-															<!-- <img src="content/images/user.png" alt=""> -->
-                            </button>
-													</div>
-												</div>
-											</div>
-										</li>
-										<li>
-											<div class="lobby__gametable ">
-												<div class="lobby__gameTableInner">
-													<div class="d-flex">
-														<div class="lobby__gameInfo">
-															<div class="d-flex flex-column align-items-start">
-																<p class="lobby__gameTitle">Roulette 034</p>
-																<div class="lobby__gamePeople ">
-																	<i class="fas fa-users"></i>16
-																</div>
-															</div>
-														</div>
-														<div class="lobby__gameTable">
-															<ul>
-																<li><span>Min Buyin</span> $20</li>
-																<li><span>Max Buyin</span> $600</li>
-																<li><span>Banker Min</span> $600</li>
-															</ul>
-														</div>
-														<button class="lobby__gameTableButton">
-                              <p>View</p>
-															<!-- <img src="content/images/user.png" alt=""> -->
-                            </button>
-													</div>
-												</div>
-											</div>
-										</li>
-										<li>
-											<div class="lobby__gametable ">
-												<div class="lobby__gameTableInner">
-													<div class="d-flex">
-														<div class="lobby__gameInfo">
-															<div class="d-flex flex-column align-items-start">
-																<p class="lobby__gameTitle">Roulette 034</p>
-																<div class="lobby__gamePeople ">
-																	<i class="fas fa-users"></i>16
-																</div>
-															</div>
-														</div>
-														<div class="lobby__gameTable">
-															<ul>
-																<li><span>Min Buyin</span> $20</li>
-																<li><span>Max Buyin</span> $600</li>
-																<li><span>Banker Min</span> $600</li>
-															</ul>
-														</div>
-														<button class="lobby__gameTableButton">
-                              <p>View</p>
-															<!-- <img src="content/images/user.png" alt=""> -->
-                            </button>
-													</div>
-												</div>
-											</div>
-										</li>
-										<li>
-											<div class="lobby__gametable ">
-												<div class="lobby__gameTableInner">
-													<div class="d-flex">
-														<div class="lobby__gameInfo">
-															<div class="d-flex flex-column align-items-start">
-																<p class="lobby__gameTitle">Roulette 034</p>
-																<div class="lobby__gamePeople ">
-																	<i class="fas fa-users"></i>16
-																</div>
-															</div>
-														</div>
-														<div class="lobby__gameTable">
-															<ul>
-																<li><span>Min Buyin</span> $20</li>
-																<li><span>Max Buyin</span> $600</li>
-																<li><span>Banker Min</span> $600</li>
-															</ul>
-														</div>
-														<button class="lobby__gameTableButton">
-                              <p>View</p>
-															<!-- <img src="content/images/user.png" alt=""> -->
-                            </button>
-													</div>
-												</div>
-											</div>
-										</li>
-										<li>
-											<div class="lobby__gametable ">
-												<div class="lobby__gameTableInner">
-													<div class="d-flex">
-														<div class="lobby__gameInfo">
-															<div class="d-flex flex-column align-items-start">
-																<p class="lobby__gameTitle">Roulette 034</p>
-																<div class="lobby__gamePeople ">
-																	<i class="fas fa-users"></i>16
-																</div>
-															</div>
-														</div>
-														<div class="lobby__gameTable">
-															<ul>
-																<li><span>Min Buyin</span> $20</li>
-																<li><span>Max Buyin</span> $600</li>
-																<li><span>Banker Min</span> $600</li>
-															</ul>
-														</div>
-														<button class="lobby__gameTableButton">
-                              <p>View</p>
-															<!-- <img src="content/images/user.png" alt=""> -->
-                            </button>
-													</div>
-												</div>
-											</div>
-										</li>
-										<li>
-											<div class="lobby__gametable ">
-												<div class="lobby__gameTableInner">
-													<div class="d-flex">
-														<div class="lobby__gameInfo">
-															<div class="d-flex flex-column align-items-start">
-																<p class="lobby__gameTitle">Roulette 034</p>
-																<div class="lobby__gamePeople ">
-																	<i class="fas fa-users"></i>16
-																</div>
-															</div>
-														</div>
-														<div class="lobby__gameTable">
-															<ul>
-																<li><span>Min Buyin</span> $20</li>
-																<li><span>Max Buyin</span> $600</li>
-																<li><span>Banker Min</span> $600</li>
-															</ul>
-														</div>
-														<button class="lobby__gameTableButton">
-                              <p>View</p>
-															<!-- <img src="content/images/user.png" alt=""> -->
-                            </button>
-													</div>
-												</div>
-											</div>
-										</li>
-										<li>
-											<div class="lobby__gametable ">
-												<div class="lobby__gameTableInner">
-													<div class="d-flex">
-														<div class="lobby__gameInfo">
-															<div class="d-flex flex-column align-items-start">
-																<p class="lobby__gameTitle">Roulette 034</p>
-																<div class="lobby__gamePeople ">
-																	<i class="fas fa-users"></i>16
-																</div>
-															</div>
-														</div>
-														<div class="lobby__gameTable">
-															<ul>
-																<li><span>Min Buyin</span> $20</li>
-																<li><span>Max Buyin</span> $600</li>
-																<li><span>Banker Min</span> $600</li>
-															</ul>
-														</div>
-														<button class="lobby__gameTableButton">
-                              <p>View</p>
-															<!-- <img src="content/images/user.png" alt=""> -->
-                            </button>
-													</div>
-												</div>
-											</div>
-										</li>
-										<li>
-											<div class="lobby__gametable ">
-												<div class="lobby__gameTableInner">
-													<div class="d-flex">
-														<div class="lobby__gameInfo">
-															<div class="d-flex flex-column align-items-start">
-																<p class="lobby__gameTitle">Roulette 034</p>
-																<div class="lobby__gamePeople ">
-																	<i class="fas fa-users"></i>16
-																</div>
-															</div>
-														</div>
-														<div class="lobby__gameTable">
-															<ul>
-																<li><span>Min Buyin</span> $20</li>
-																<li><span>Max Buyin</span> $600</li>
-																<li><span>Banker Min</span> $600</li>
-															</ul>
-														</div>
-														<button class="lobby__gameTableButton">
-                              <p>View</p>
-															<!-- <img src="content/images/user.png" alt=""> -->
-                            </button>
-													</div>
-												</div>
-											</div>
-										</li>
-										<li>
-											<div class="lobby__gametable ">
-												<div class="lobby__gameTableInner">
-													<div class="d-flex">
-														<div class="lobby__gameInfo">
-															<div class="d-flex flex-column align-items-start">
-																<p class="lobby__gameTitle">Roulette 034</p>
-																<div class="lobby__gamePeople ">
-																	<i class="fas fa-users"></i>16
-																</div>
-															</div>
-														</div>
-														<div class="lobby__gameTable">
-															<ul>
-																<li><span>Min Buyin</span> $20</li>
-																<li><span>Max Buyin</span> $600</li>
-																<li><span>Banker Min</span> $600</li>
-															</ul>
-														</div>
-														<button class="lobby__gameTableButton">
-                              <p>View</p>
-															<!-- <img src="content/images/user.png" alt=""> -->
-                            </button>
-													</div>
-												</div>
-											</div>
-										</li>
-										<li>
-											<div class="lobby__gametable ">
-												<div class="lobby__gameTableInner">
-													<div class="d-flex">
-														<div class="lobby__gameInfo">
-															<div class="d-flex flex-column align-items-start">
-																<p class="lobby__gameTitle">Roulette 034</p>
-																<div class="lobby__gamePeople ">
-																	<i class="fas fa-users"></i>16
-																</div>
-															</div>
-														</div>
-														<div class="lobby__gameTable">
-															<ul>
-																<li><span>Min Buyin</span> $20</li>
-																<li><span>Max Buyin</span> $600</li>
-																<li><span>Banker Min</span> $600</li>
-															</ul>
-														</div>
-														<button class="lobby__gameTableButton">
-                              <p>View</p>
-															<!-- <img src="content/images/user.png" alt=""> -->
-                            </button>
-													</div>
-												</div>
-											</div>
-										</li>
-										<li>
-											<div class="lobby__gametable ">
-												<div class="lobby__gameTableInner">
-													<div class="d-flex">
-														<div class="lobby__gameInfo">
-															<div class="d-flex flex-column align-items-start">
-																<p class="lobby__gameTitle">Roulette 034</p>
-																<div class="lobby__gamePeople ">
-																	<i class="fas fa-users"></i>16
-																</div>
-															</div>
-														</div>
-														<div class="lobby__gameTable">
-															<ul>
-																<li><span>Min Buyin</span> $20</li>
-																<li><span>Max Buyin</span> $600</li>
-																<li><span>Banker Min</span> $600</li>
-															</ul>
-														</div>
-														<button class="lobby__gameTableButton">
-                              <p>View</p>
-															<!-- <img src="content/images/user.png" alt=""> -->
-                            </button>
-													</div>
-												</div>
-											</div>
-										</li>
-										<li>
-											<div class="lobby__gametable ">
-												<div class="lobby__gameTableInner">
-													<div class="d-flex">
-														<div class="lobby__gameInfo">
-															<div class="d-flex flex-column align-items-start">
-																<p class="lobby__gameTitle">Roulette 034</p>
-																<div class="lobby__gamePeople ">
-																	<i class="fas fa-users"></i>16
-																</div>
-															</div>
-														</div>
-														<div class="lobby__gameTable">
-															<ul>
-																<li><span>Min Buyin</span> $20</li>
-																<li><span>Max Buyin</span> $600</li>
-																<li><span>Banker Min</span> $600</li>
-															</ul>
-														</div>
-														<button class="lobby__gameTableButton">
-                              <p>View</p>
-															<!-- <img src="content/images/user.png" alt=""> -->
-                            </button>
-													</div>
-												</div>
-											</div>
-										</li>
-										<li>
-											<div class="lobby__gametable ">
-												<div class="lobby__gameTableInner">
-													<div class="d-flex">
-														<div class="lobby__gameInfo">
-															<div class="d-flex flex-column align-items-start">
-																<p class="lobby__gameTitle">Roulette 034</p>
-																<div class="lobby__gamePeople ">
-																	<i class="fas fa-users"></i>16
-																</div>
-															</div>
-														</div>
-														<div class="lobby__gameTable">
-															<ul>
-																<li><span>Min Buyin</span> $20</li>
-																<li><span>Max Buyin</span> $600</li>
-																<li><span>Banker Min</span> $600</li>
-															</ul>
-														</div>
-														<button class="lobby__gameTableButton">
-                              <p>View</p>
-															<!-- <img src="content/images/user.png" alt=""> -->
-                            </button>
-													</div>
-												</div>
-											</div>
-										</li>
-										<li>
-											<div class="lobby__gametable ">
-												<div class="lobby__gameTableInner">
-													<div class="d-flex">
-														<div class="lobby__gameInfo">
-															<div class="d-flex flex-column align-items-start">
-																<p class="lobby__gameTitle">Roulette 034</p>
-																<div class="lobby__gamePeople ">
-																	<i class="fas fa-users"></i>16
-																</div>
-															</div>
-														</div>
-														<div class="lobby__gameTable">
-															<ul>
-																<li><span>Min Buyin</span> $20</li>
-																<li><span>Max Buyin</span> $600</li>
-																<li><span>Banker Min</span> $600</li>
-															</ul>
-														</div>
-														<button class="lobby__gameTableButton">
-                              <p>View</p>
-															<!-- <img src="content/images/user.png" alt=""> -->
-                            </button>
-													</div>
-												</div>
-											</div>
-										</li>
-										
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="tab-pane  fade" id="public">
-
-						</div>
-						<div class="tab-pane  fade" id="vip">...</div>
-					</div>
-				</div>
-				</div>
 		
 			</div>
 		
 		
 		</div>
 	</div>
-
 	<div class="footerTop"></div>
 	<div id="footer" class="footer">
-		<div class="container">
-			<div class="footer__logo">
-				<img src="content/images/logo.png" alt="">
-			</div>
-			<div class="col-8 offset-2 ">
+    <div class="container">
+      <div class="footer__logo">
+        <img src="content/images/logo.png" alt="">
+      </div>
+        <div class="col-12  ">
+         
+            <div class="d-flex just-content-center  flex-wrap  w-full">
+              <ul class="footer_links col-12 p-0 d-flex justify-content-center">
+                <li class=" ">
+                  <a href="https://www.{{$webTitle}}.com/en/terms-of-use" class="" target="_self">Terms of
+                    Use</a>
+              
+                </li>
+                <li class=" ">
+                  <a href="https://www.{{$webTitle}}.com/en/privacy" class="" target="_self">Privacy Policy</a>
+                </li>
+                </ul>
+               
+               
+            </div>
+          
+        </div>
+        <div class="d-flex flex-wrap">
 
-				<div class="d-flex just-content-center  flex-wrap  w-full">
-					<ul class="footer_links col-12 p-0 d-flex justify-content-center">
-						<li class=" ">
-							<a href="https://www.{{$webTitle}}.com/en/terms-of-use" class="" target="_self">Terms of
-								Use</a>
+      
+          <div class="copyright col-lg-6  col-12 order-lg-1 order-2">
+            <div class="d-flex flex-wrap justify-content-start">
+              <div class="col-12  mt-1 mt-lg-0 p-0 ">
+                <p class=" text-lg-left text-center">Copyright &copy; 2020 | M4Gaming | All Rights Reserved</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2 col-12 justify-content-lg-end justify-content-center d-flex">
+            <div class="d-flex flex-wrap">
+            <ul class="col-md-6 col-12 p-0 bank_list mt-2">
+              <li><img src="content/images/bank/help.png" alt=""></li>
+              <li><img src="content/images/bank/master.png" alt=""></li>
+              <li><img src="content/images/bank/neteller.png" alt=""></li>
+              <li><img src="content/images/bank/skrill.png" alt=""></li>
+              <li><img src="content/images/bank/visa.png" alt=""></li>
+            </ul>
+            <ul class="col-md-6 col-12 d-flex mt-10 justify-content-center social_icons">
+              <li><a href="https://dfgameplay.com/gjdnjr"
+                  data-src="/en/dafa/content/images/sprite.9a50b6da82dcfc991953cdcda7671618.png" target="_blank">
+                  <i class="fab fa-facebook-square"></i></a></li>
+              <li> <a href="https://twitter.com/{{$webTitle}}"
+                  data-src="/en/dafa/content/images/sprite.9a50b6da82dcfc991953cdcda7671618.png" target="_blank">
+                  <i class="fab fa-twitter-square"></i></a></li>
+              <li>
+                <a href="https://www.youtube.com/user/The{{$webTitle}}Channel"
+                  data-src="/en/dafa/content/images/sprite.9a50b6da82dcfc991953cdcda7671618.png" target="_blank">
+                  <i class="fab fa-youtube-square"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          </div>
+        </div>
 
-						</li>
-						<li class=" ">
-							<a href="https://www.{{$webTitle}}.com/en/privacy" class="" target="_self">Privacy Policy</a>
-						</li>
-					</ul>
-
-
-				</div>
-
-			</div>
-			<div class="d-flex">
-
-
-				<div class="copyright col-6">
-					<div class="d-flex flex-wrap justify-content-start">
-						<div class="col-12  order-lg-1 order-2 mt-1 mt-lg-0 p-0 ">
-							<p class=" text-left">Copyright &copy; 2020 | M4Gaming | All Rights Reserved</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-6 justify-content-end d-flex">
-					<div class="d-flex">
-						<ul class="col-6 p-0 bank_list mt-2">
-							<li><img src="content/images/bank/help.png" alt=""></li>
-							<li><img src="content/images/bank/master.png" alt=""></li>
-							<li><img src="content/images/bank/neteller.png" alt=""></li>
-							<li><img src="content/images/bank/skrill.png" alt=""></li>
-							<li><img src="content/images/bank/visa.png" alt=""></li>
-						</ul>
-						<ul class="col-6 d-flex mt-10 justify-content-center social_icons">
-							<li><a href="https://dfgameplay.com/gjdnjr"
-									data-src="/en/dafa/content/images/sprite.9a50b6da82dcfc991953cdcda7671618.png" target="_blank">
-									<i class="fab fa-facebook-square"></i></a></li>
-							<li> <a href="https://twitter.com/{{$webTitle}}"
-									data-src="/en/dafa/content/images/sprite.9a50b6da82dcfc991953cdcda7671618.png" target="_blank">
-									<i class="fab fa-twitter-square"></i></a></li>
-							<li>
-								<a href="https://www.youtube.com/user/The{{$webTitle}}Channel"
-									data-src="/en/dafa/content/images/sprite.9a50b6da82dcfc991953cdcda7671618.png" target="_blank">
-									<i class="fab fa-youtube-square"></i>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</div>
+    </div>
+  </div>
 	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
 		aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered">
