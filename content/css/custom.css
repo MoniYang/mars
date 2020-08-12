@@ -4059,7 +4059,7 @@ img {
 }
 @media only screen and (max-width: 576px) {
   .proContent {
-    margin-top: 60px;
+    margin-top: 120px;
   }
 }
 .proContent__Text {
